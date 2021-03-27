@@ -1,7 +1,7 @@
 # Личный проект «Пинк» 
 
 * Студент: [Дмитрий Луцишин](https://up.htmlacademy.ru/adaptive/22/user/1652277).
-* Наставник: `Андрей Пудов`.
+* Наставник: `Андрей Пудов`(https://htmlacademy.ru/profile/kamelot43).
 
 ---
 
