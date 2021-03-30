@@ -117,8 +117,11 @@
       <section class="upload">
         <h2 class="visually-hidden">Загрузка своих фотографий</h2>
         <p class="upload__text text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
-        <img class="upload__image" src="img/photo-7-mobile.jpg" alt="Зимняя пустая дорога" width="280" height="374">
         <form class="upload__form" method="POST" action="https://echo.htmlacademy.ru">
+          <label class="upload__label">
+            <img class="upload__image" src="img/photo-7-mobile.jpg" alt="Зимняя пустая дорога" width="280" height="374">
+            <input class="upload__input" type="file" name="filename">
+          </label>
           <ul class="upload__list">
             <li class="upload__item photo-processing">
               <button class="photo-processing__button photo-processing__button--crop" type="button">Обрезать</button>
