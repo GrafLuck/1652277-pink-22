@@ -1,0 +1,21 @@
+.contact-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contact-list__item {
+  margin-bottom: 30px;
+}
+
+.contact-list__text {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.contact-list__link {
+  text-decoration: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

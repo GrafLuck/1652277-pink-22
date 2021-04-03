@@ -1,0 +1,48 @@
+.feature {
+  padding-top: 46px;
+}
+
+.feature__wrapper-top {
+  padding-bottom: 70px;
+  background: linear-gradient(175deg, $white 90%, $grey 90%);
+}
+
+.feature__wrapper-bottom {
+  background-color: $grey;
+  padding-top: 53px;
+}
+
+.feature__question {
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.feature__answer {
+  margin: 0;
+}
+
+.feature__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+}
+
+.feature__item {
+
+}
+
+.feature__subtitle {
+  margin: 0;
+  padding: 0;
+}
+
+.feature__text {
+  margin-top: 20px;
+  margin-bottom: 43px;
+}
+
+.feature__image {
+  display: block;
+  margin: 0 auto;
+}

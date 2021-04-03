@@ -1,0 +1,35 @@
+.slider {
+
+}
+
+.slider__list {
+
+}
+
+.slider__item {
+
+}
+
+.slider__toggles {
+  display: flex;
+  justify-content: center;
+}
+
+.slider__toggle {
+  width: 6px;
+  height: 6px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: rgba($dark-blue, 0.3);
+  border: none;
+  margin-right: 19px;
+
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+.slider__toggle--current {
+  background-color: $white;
+  box-shadow: 0 0 0 3px $dark-blue;
+}
