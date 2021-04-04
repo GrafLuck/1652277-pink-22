@@ -4,12 +4,13 @@
 
 .feature__wrapper-top {
   padding-bottom: 70px;
-  background: linear-gradient(175deg, $white 90%, $grey 90%);
+  background: linear-gradient(176deg, $white 80%, $grey 80%);
 }
 
 .feature__wrapper-bottom {
   background-color: $grey;
   padding-top: 53px;
+  width: 100%;
 }
 
 .feature__question {
@@ -22,10 +23,7 @@
 }
 
 .feature__list {
-  margin: 0;
-  padding: 0;
   list-style: none;
-
 }
 
 .feature__item {
