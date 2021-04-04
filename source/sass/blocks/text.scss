@@ -1,9 +1,21 @@
 .text {
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 30px;
 
   text-align: center;
 
   color: $dark-blue;
+}
+
+.text--uppercase {
+  text-transform: uppercase;
+}
+
+.text--attention {
+  color: $red;
+}
+
+.text--narrow {
+  line-height: 24px;
 }

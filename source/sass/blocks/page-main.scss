@@ -4,4 +4,17 @@
 
 .page-main__wrapper {
   margin-top: -66px;
+  background-color: $blue;
+  background-image: url(../../img/download-background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 462px;
+  padding-bottom: 28px;
+}
+
+.page-main__title {
+  padding-top: 100px;
+}
+
+.page-main__text {
+  margin-top: 35px;
 }

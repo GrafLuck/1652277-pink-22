@@ -1,0 +1,50 @@
+.form {
+
+}
+
+.form__fieldset {
+  border: none;
+  padding: 40px 0;
+  margin: 0;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.form__fieldset--dark {
+  background-color: $grey;
+}
+
+.form__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.form__item {
+  margin-bottom: 43px;
+}
+
+.form__item--text {
+  margin-bottom: 15px;
+}
+
+.form__legend {
+  text-align: center;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form__textarea {
+  margin-bottom: 10px;
+}
+
+.form__button {
+
+}
+
+.form__footnote {
+
+}
