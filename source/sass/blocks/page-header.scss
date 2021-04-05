@@ -1,9 +1,4 @@
 .page-header {
-  background-color: $dark-blue;
-  position: relative;
-}
-
-.page-header__wrapper {
 
 }
 
@@ -11,6 +6,8 @@
   display: flex;
   align-items: center;
   height: 69px;
+  background-color: $dark-blue;
+  border-bottom: 1px solid $black;
 }
 
 .page-header__navigation {
