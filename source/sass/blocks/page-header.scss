@@ -3,12 +3,18 @@
   position: relative;
 }
 
-.page-header__logo {
+.page-header__wrapper {
 
 }
 
-.page-header__navigation {
+.page-header__logo {
+  display: flex;
+  align-items: center;
+  height: 69px;
+}
 
+.page-header__navigation {
+  position: relative;
 }
 
 .page-header__button {
