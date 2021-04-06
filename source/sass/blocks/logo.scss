@@ -1,7 +1,5 @@
 .logo {
   display: block;
-  // width: 74px;
-  // height: 23px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -9,8 +7,8 @@
   }
 }
 
-.logo__text {
-
+.logo__text,
+.logo__picture {
   &:hover path,
   &:focus path {
     fill: $red;
