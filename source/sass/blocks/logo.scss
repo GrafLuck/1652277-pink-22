@@ -1,19 +1,66 @@
 .logo {
+  display: block;
+  // width: 74px;
+  // height: 23px;
 
-}
-
-.logo__picture {
-
-}
-
-.logo__picture--red {
-  fill: $red;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: flex-end;
+  }
 }
 
 .logo__text {
 
+  &:hover path,
+  &:focus path {
+    fill: $red;
+  }
+
+  &:active path {
+    fill: $white;
+    fill-opacity: 0.3;
+  }
 }
 
-.logo__text--dark {
-  fill: $dark-blue;
+@media (max-width: $mobile-width-only) {
+  .logo__picture {
+    display: none;
+  }
+
+  .logo__text--simply {
+    display: block;
+  }
+
+  .logo__text--celebrity {
+    display: none;
+  }
 }
+
+@media (min-width: $tablet-width) {
+  .logo__picture {
+    margin-right: 12px;
+  }
+
+  .logo__text--simply,
+  .logo__picture--simply {
+    display: block;
+  }
+
+  .logo__text--celebrity,
+  .logo__picture--celebrity {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo__text--simply,
+  .logo__picture--simply {
+    display: none;
+  }
+
+  .logo__text--celebrity,
+  .logo__picture--celebrity {
+    display: block;
+  }
+}
+
