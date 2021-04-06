@@ -1,4 +1,4 @@
-.button-download {
+.button {
   display: block;
 
   font-family: "Open Sans", "Arial", sans-serif;
@@ -15,4 +15,15 @@
   box-sizing: border-box;
   border-radius: 29px;
   padding: 18px 35px;
+  width: 280px;
+
+  &:hover,
+  &:focus {
+    color: $red;
+    background-color: $white
+  }
+
+  &:active {
+    color: rgba($red, 0.3);
+  }
 }

@@ -28,6 +28,18 @@
   .navigation__link {
     font-weight: 400;
     line-height: 18px;
+    position: relative;
+  }
+
+  .navigation__link--current::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: $white;
+    top: 36px;
+    left: 0;
   }
 }
 
