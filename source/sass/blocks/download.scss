@@ -23,14 +23,18 @@
     background-image: url(../../img/phone-desktop.png), url(../../img/background-desktop.jpg);
     background-size: auto 645px, auto 853px;
     background-position: center bottom, center bottom;
-    display: flex;
-    justify-content: flex-start;
+    display: block;
     padding-left: 130px;
     padding-right: 130px;
   }
 }
 
 .download__wrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.download__inner {
   box-sizing: border-box;
   padding-top: 65px;
   padding-bottom: 28px;
