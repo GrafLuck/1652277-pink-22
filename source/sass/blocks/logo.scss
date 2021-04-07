@@ -8,12 +8,12 @@
 }
 
 .logo__image {
-  &:hover path,
-  &:focus path {
+  &:not(.logo__image--main-page):hover path,
+  &:not(.logo__image--main-page):focus path {
     fill: $red;
   }
 
-  &:active path {
+  &:not(.logo__image--main-page):active path {
     fill: $white;
     fill-opacity: 0.3;
   }

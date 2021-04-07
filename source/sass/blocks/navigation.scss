@@ -18,7 +18,7 @@
   }
 
   .navigation__item {
-    margin-left: 78px;
+    margin-left: 80px;
 
     &:first-child {
       margin-left: 0;
@@ -206,6 +206,17 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+.navigation__link--current {
+  &:hover,
+  &:focus {
+    color: $white;
+  }
+
+  &:active {
+    opacity: 1;
   }
 }
 

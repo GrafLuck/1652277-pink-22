@@ -6,7 +6,6 @@
   background-repeat: no-repeat;
   background-position: center 177px, center top;
   background-size: auto 286px, auto 462px;
-  // padding-bottom: 28px;
 
   @media (min-width: $tablet-width) {
     height: 729px;
@@ -15,54 +14,69 @@
     background-position: center bottom, center bottom;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    // padding-top: 180px;
-    // padding-bottom: 119px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   @media (min-width: $desktop-width) {
     height: 853px;
-    background-image: url(../../img/phone-tablet.png), url(../../img/background-desktop.jpg);
-    background-size: auto 579px, auto 853px;
-    background-position: 305px bottom, center bottom;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    background-image: url(../../img/phone-desktop.png), url(../../img/background-desktop.jpg);
+    background-size: auto 645px, auto 853px;
+    background-position: center bottom, center bottom;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 130px;
+    padding-right: 130px;
   }
 }
 
 .download__wrapper {
   box-sizing: border-box;
   padding-top: 65px;
-  padding-bottom: 28px; //
+  padding-bottom: 28px;
+  width: 320px;
   padding-left: 20px;
   padding-right: 20px;
-  // background-image: url(../../img/download-phone.png);
-  // background-repeat: no-repeat;
-  // background-position: center 176px;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (min-width: $tablet-width) {
+    width: 300px;
+    padding-left: 0;
     padding-right: 0;
-    padding-top: 163px; //
-    padding-bottom: 119px; // +28
+    padding-top: 163px;
+    padding-bottom: 119px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    margin-right: 0;
+    // width: 940px; //
   }
 }
 
 .download__slogan {
-  margin-bottom: 343px;
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 285px;
+    min-height: 116px;
+  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 31px;
-    margin-left: 10px;
-    margin-right: 10px;
   }
 }
 
 .download__button {
-  margin-bottom: 34px;
+  margin-bottom: 46px;
   margin-left: auto;
   margin-right: auto;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 71px;
   }
 }
 
@@ -76,7 +90,7 @@
   margin-bottom: 12px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 38px;
+    margin-bottom: 45px;
   }
 }
 
@@ -93,12 +107,6 @@
   &:focus {
     outline: auto;
   }
-}
-
-.download__image {
-  // width: 47px;
-  // height: 56px;
-  // object-fit: contain;
 }
 
 .download__devices {
