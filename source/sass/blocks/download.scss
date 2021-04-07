@@ -1,27 +1,69 @@
 .download {
+  box-sizing: border-box;
+  height: 733px;
   background-color: $blue;
-  background-image: url(../../img/background.jpg);
+  background-image: url(../../img/download-phone.png), url(../../img/background.jpg);
   background-repeat: no-repeat;
-  background-position: center top;
-  background-size: auto 462px;
-  padding-bottom: 28px;
+  background-position: center 177px, center top;
+  background-size: auto 286px, auto 462px;
+  // padding-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    height: 729px;
+    background-image: url(../../img/phone-tablet.png), url(../../img/background-tablet.jpg);
+    background-size: auto 545px, auto 853px;
+    background-position: center bottom, center bottom;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    // padding-top: 180px;
+    // padding-bottom: 119px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 853px;
+    background-image: url(../../img/phone-tablet.png), url(../../img/background-desktop.jpg);
+    background-size: auto 579px, auto 853px;
+    background-position: 305px bottom, center bottom;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .download__wrapper {
-  padding-top: 62px;
-  background-image: url(../../img/download-phone.png);
-  background-repeat: no-repeat;
-  background-position: center 176px;
+  box-sizing: border-box;
+  padding-top: 65px;
+  padding-bottom: 28px; //
+  padding-left: 20px;
+  padding-right: 20px;
+  // background-image: url(../../img/download-phone.png);
+  // background-repeat: no-repeat;
+  // background-position: center 176px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 0;
+    padding-top: 163px; //
+    padding-bottom: 119px; // +28
+  }
 }
 
 .download__slogan {
-  margin-bottom: 375px;
+  margin-bottom: 343px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 31px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 
 .download__button {
-  margin-bottom: 32px;
+  margin-bottom: 34px;
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 46px;
+  }
 }
 
 .download__list {
@@ -31,7 +73,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 28px;
+  margin-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 38px;
+  }
 }
 
 .download__item {
@@ -50,11 +96,22 @@
 }
 
 .download__image {
-
+  // width: 47px;
+  // height: 56px;
+  // object-fit: contain;
 }
 
 .download__devices {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 300;
   font-size: 14px;
   line-height: 24px;
   text-align: center;
+  color: $white;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }

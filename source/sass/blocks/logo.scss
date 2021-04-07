@@ -7,8 +7,7 @@
   }
 }
 
-.logo__text,
-.logo__picture {
+.logo__image {
   &:hover path,
   &:focus path {
     fill: $red;
@@ -20,45 +19,33 @@
   }
 }
 
-@media (max-width: $mobile-width-only) {
-  .logo__picture {
-    display: none;
-  }
+.logo__image--mobile {
+  display: block;
 
-  .logo__text--simply {
-    display: block;
-  }
-
-  .logo__text--celebrity {
+  @media(min-width: $tablet-width) {
     display: none;
   }
 }
 
-@media (min-width: $tablet-width) {
-  .logo__picture {
-    margin-right: 12px;
-  }
+.logo__image--tablet {
+  display: none;
 
-  .logo__text--simply,
-  .logo__picture--simply {
+  @media(min-width: $tablet-width) {
     display: block;
   }
 
-  .logo__text--celebrity,
-  .logo__picture--celebrity {
+  @media(min-width: $desktop-width) {
     display: none;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .logo__text--simply,
-  .logo__picture--simply {
-    display: none;
-  }
+.logo__image--desktop {
+  display: none;
 
-  .logo__text--celebrity,
-  .logo__picture--celebrity {
+  @media(min-width: $desktop-width) {
     display: block;
   }
 }
+
+
 

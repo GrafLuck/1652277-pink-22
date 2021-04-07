@@ -14,7 +14,7 @@
   border: 3px solid $white;
   box-sizing: border-box;
   border-radius: 29px;
-  padding: 18px 35px;
+  padding: 16px 35px;
   width: 280px;
 
   &:hover,
@@ -25,5 +25,9 @@
 
   &:active {
     color: rgba($red, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
   }
 }

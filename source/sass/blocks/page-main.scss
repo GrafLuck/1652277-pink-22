@@ -4,4 +4,12 @@
 
 .page-main__wrapper {
   margin-top: -66px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -110px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -110px;
+  }
 }
