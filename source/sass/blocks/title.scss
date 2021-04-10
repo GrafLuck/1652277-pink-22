@@ -25,3 +25,13 @@
 .title--red {
   color: $red;
 }
+
+.title--wide {
+  @media (min-width: $tablet-width) {
+    line-height: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 68px;
+  }
+}

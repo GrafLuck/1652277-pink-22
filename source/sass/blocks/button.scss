@@ -1,7 +1,5 @@
 .button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: inline-block;
 
   font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
@@ -16,9 +14,7 @@
   border: 3px solid $white;
   box-sizing: border-box;
   border-radius: 29px;
-  // padding: 16px 35px;
-  width: 280px;
-  min-height: 55px;
+  padding: 16px 35px;
 
   &:hover,
   &:focus {
@@ -31,11 +27,10 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 300px;
+    padding: 16px 46px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 21px;
-    min-height: 56px;
   }
 }

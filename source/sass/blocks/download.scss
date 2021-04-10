@@ -2,59 +2,40 @@
   box-sizing: border-box;
   height: 733px;
   background-color: $blue;
-  background-image: url(../../img/download-phone.png), url(../../img/background.jpg);
+  background-image: url(../../img/background.jpg);
   background-repeat: no-repeat;
-  background-position: center 177px, center top;
-  background-size: auto 286px, auto 462px;
+  background-position: center top;
+  background-size: auto 462px;
 
   @media (min-width: $tablet-width) {
     height: 729px;
-    background-image: url(../../img/phone-tablet.png), url(../../img/background-tablet.jpg);
-    background-size: auto 545px, auto 853px;
-    background-position: center bottom, center bottom;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-left: 20px;
-    padding-right: 20px;
+    background-image: url(../../img/background-tablet.jpg);
+    background-size: auto 853px;
+    background-position: center bottom;
+    display: block;
   }
 
   @media (min-width: $desktop-width) {
     height: 853px;
-    background-image: url(../../img/phone-desktop.png), url(../../img/background-desktop.jpg);
-    background-size: auto 645px, auto 853px;
-    background-position: center bottom, center bottom;
+    background-image: url(../../img/background-desktop.jpg);
+    background-size: auto 853px;
+    background-position: center bottom;
     display: block;
-    padding-left: 130px;
-    padding-right: 130px;
   }
 }
 
 .download__wrapper {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.download__inner {
   box-sizing: border-box;
   padding-top: 65px;
   padding-bottom: 28px;
-  width: 320px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
-    width: 300px;
-    padding-left: 0;
-    padding-right: 0;
     padding-top: 163px;
     padding-bottom: 119px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 0;
-    margin-right: 0;
     // width: 940px; //
   }
 }
@@ -125,5 +106,47 @@
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 24px;
+  }
+}
+
+.download__image {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.download__image--mobile {
+  display: block;
+  width: auto;
+  height: 286px;
+
+  @media(min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.download__image--tablet {
+  width: auto;
+  height: 545px;
+
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.download__image--desktop {
+  display: none;
+  width: auto;
+  height: 645px;
+
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }
