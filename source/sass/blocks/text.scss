@@ -10,3 +10,16 @@
     line-height: 30px;
   }
 }
+
+.text--wide {
+  line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
+}
+
+.text--link {
+  text-decoration: underline;
+  color: $red;
+}

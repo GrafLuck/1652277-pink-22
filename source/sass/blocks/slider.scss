@@ -1,5 +1,5 @@
 .slider {
-
+  position: relative;
 }
 
 .slider__list {
@@ -13,6 +13,7 @@
 .slider__toggles {
   display: flex;
   justify-content: center;
+
 }
 
 .slider__toggle {
@@ -32,4 +33,29 @@
 .slider__toggle--current {
   background-color: $white;
   box-shadow: 0 0 0 3px $dark-blue;
+}
+
+.slider__control {
+  position: absolute;
+  top: 29px;
+
+  width: 22px;
+  height: 41px;
+  border: none;
+  padding: 0;
+
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: transparent;
+}
+
+.slider__control--previous {
+  background-image: url(../../img/icon-left-arrow.svg);
+  left: 130px;
+
+}
+
+.slider__control--next {
+  background-image: url(../../img/icon-right-arrow.svg);
+  right: 130px;
 }
