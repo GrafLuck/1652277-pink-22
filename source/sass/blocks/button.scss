@@ -27,10 +27,11 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 16px 46px;
+    padding: 16px 45px;
   }
 
   @media (min-width: $desktop-width) {
+    padding: 16px 28px;
     font-size: 21px;
   }
 }

@@ -24,15 +24,32 @@
   background-color: rgba($dark-blue, 0.3);
   border: none;
   margin-right: 19px;
+  cursor: pointer;
 
   &:last-child {
     margin-right: 0px;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
   }
 }
 
 .slider__toggle--current {
   background-color: $white;
   box-shadow: 0 0 0 3px $dark-blue;
+  cursor: default;
+
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 1;
+  }
 }
 
 .slider__control {
@@ -47,6 +64,15 @@
   background-repeat: no-repeat;
   background-position: 0 0;
   background-color: transparent;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }
 
 .slider__control--previous {

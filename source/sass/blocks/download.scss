@@ -1,23 +1,23 @@
 .download {
   box-sizing: border-box;
-  height: 733px;
+  min-height: 733px;
   background-color: $blue;
-  background-image: url(../../img/background.jpg);
+  background-image: url(../../img/background-with-phone-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: auto 462px;
 
   @media (min-width: $tablet-width) {
-    height: 729px;
-    background-image: url(../../img/background-tablet.jpg);
-    background-size: auto 853px;
+    min-height: 729px;
+    background-image: url(../../img/background-with-phone-tablet.jpg);
+    background-size: auto 729px;
     background-position: center bottom;
     display: block;
   }
 
   @media (min-width: $desktop-width) {
     height: 853px;
-    background-image: url(../../img/background-desktop.jpg);
+    background-image: url(../../img/background-with-phone-desktop.jpg);
     background-size: auto 853px;
     background-position: center bottom;
     display: block;
@@ -31,8 +31,9 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    padding-top: 163px;
+    padding-top: 139px;
     padding-bottom: 119px;
+    width: 300px;
   }
 
   @media (min-width: $desktop-width) {
