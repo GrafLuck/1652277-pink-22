@@ -2,14 +2,14 @@
   box-sizing: border-box;
   min-height: 733px;
   background-color: $blue;
-  background-image: url(../../img/background-with-phone-mobile.jpg);
+  background-image: url("../../img/background-with-phone-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: auto 462px;
 
   @media (min-width: $tablet-width) {
     min-height: 729px;
-    background-image: url(../../img/background-with-phone-tablet.jpg);
+    background-image: url("../../img/background-with-phone-tablet.jpg");
     background-size: auto 729px;
     background-position: center bottom;
     display: block;
@@ -17,7 +17,7 @@
 
   @media (min-width: $desktop-width) {
     height: 853px;
-    background-image: url(../../img/background-with-phone-desktop.jpg);
+    background-image: url("../../img/background-with-phone-desktop.jpg");
     background-size: auto 853px;
     background-position: center bottom;
     display: block;
@@ -124,7 +124,7 @@
   width: auto;
   height: 286px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     display: none;
   }
 }

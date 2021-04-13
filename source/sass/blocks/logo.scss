@@ -22,7 +22,7 @@
 .logo__image--mobile {
   display: block;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     display: none;
   }
 }
@@ -30,11 +30,11 @@
 .logo__image--tablet {
   display: none;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     display: block;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     display: none;
   }
 }
@@ -42,10 +42,7 @@
 .logo__image--desktop {
   display: none;
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     display: block;
   }
 }
-
-
-

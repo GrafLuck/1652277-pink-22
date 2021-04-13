@@ -2,18 +2,9 @@
   position: relative;
 }
 
-.slider__list {
-
-}
-
-.slider__item {
-
-}
-
 .slider__toggles {
   display: flex;
   justify-content: center;
-
 }
 
 .slider__toggle {
@@ -27,7 +18,7 @@
   cursor: pointer;
 
   &:last-child {
-    margin-right: 0px;
+    margin-right: 0;
   }
 
   &:hover,
@@ -76,12 +67,11 @@
 }
 
 .slider__control--previous {
-  background-image: url(../../img/icon-left-arrow.svg);
+  background-image: url("../../img/icon-left-arrow.svg");
   left: 130px;
-
 }
 
 .slider__control--next {
-  background-image: url(../../img/icon-right-arrow.svg);
+  background-image: url("../../img/icon-right-arrow.svg");
   right: 130px;
 }

@@ -1,14 +1,124 @@
-@media (min-width: $desktop-width) {
-  .navigation {
+.navigation {
+  @media (min-width: $desktop-width) {
     padding-top: 40px;
     padding-bottom: 40px;
   }
+}
 
-  .navigation__toggle-wrapper {
+.navigation__toggle-wrapper {
+  @media (min-width: $desktop-width) {
     display: none;
   }
+}
 
-  .navigation__list {
+.navigation--opened .navigation__toggle-wrapper {
+  padding-top: 23px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid $black;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 43px;
+    padding-bottom: 43px;
+  }
+}
+
+.navigation--closed .navigation__toggle-wrapper {
+  padding-top: 21px;
+  padding-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 43px;
+    padding-bottom: 43px;
+  }
+}
+
+.navigation--opened .navigation__toggle {
+  outline: none;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: 20px;
+  padding: 0;
+  width: 23px;
+  height: 23px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: 10px;
+    display: block;
+    width: 3px;
+    height: 30px;
+    background-color: $white;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after,
+  &:focus::before,
+  &:focus::after {
+    background-color: $red;
+  }
+
+  &:active::before,
+  &:active::after {
+    opacity: 0.3;
+  }
+}
+
+.navigation--closed .navigation__toggle {
+  outline: none;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: 20px;
+  padding: 0;
+  width: 50px;
+  height: 24px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    right: 0;
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: $white;
+    border-radius: 1px;
+    box-shadow: 0 10px $white,
+      0 20px $white;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    background-color: $red;
+    box-shadow: 0 10px $red,
+      0 20px $red;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
+}
+
+.navigation__list {
+  @media (min-width: $desktop-width) {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -16,149 +126,20 @@
     flex-wrap: wrap;
     justify-content: flex-end;
   }
-
-  .navigation__item {
-    margin-left: 80px;
-
-    &:first-child {
-      margin-left: 0;
-    }
-  }
-
-  .navigation__link {
-    font-weight: 400;
-    line-height: 18px;
-    position: relative;
-  }
-
-  .navigation__link--current::before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: $white;
-    top: 36px;
-    left: 0;
-  }
 }
 
-@media (max-width: $tablet-width-only) {
-  .navigation--opened .navigation__toggle-wrapper {
-    padding-top: 23px;
-    padding-bottom: 23px;
-    border-bottom: 1px solid $black;
-
-    @media (min-width: $tablet-width) {
-      padding-top: 43px;
-      padding-bottom: 43px;
-    }
-  }
-
-  .navigation--closed .navigation__toggle-wrapper {
-    padding-top: 21px;
-    padding-bottom: 21px;
-
-    @media (min-width: $tablet-width) {
-      padding-top: 43px;
-      padding-bottom: 43px;
-    }
-  }
-
-  .navigation--opened .navigation__toggle {
-    outline: none;
-    position: relative;
-    display: block;
-    margin-left: auto;
-    margin-right: 20px;
-    padding: 0;
-    width: 23px;
-    height: 23px;
-    cursor: pointer;
-    border: none;
-    background-color: transparent;
-
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-      top: -4px;
-      left: 10px;
-      display: block;
-      width: 3px;
-      height: 30px;
-      background-color: $white;
-    }
-
-    &::before {
-      transform: rotate(45deg);
-    }
-
-    &::after {
-      transform: rotate(-45deg);
-    }
-
-    &:hover::before,
-    &:hover::after,
-    &:focus::before,
-    &:focus::after {
-      background-color: $red;
-    }
-
-    &:active::before,
-    &:active::after {
-      opacity: 0.3;
-    }
-  }
-
-  .navigation--closed .navigation__toggle {
-    outline: none;
-    position: relative;
-    display: block;
-    margin-left: auto;
-    margin-right: 20px;
-    padding: 0;
-    width: 50px;
-    height: 24px;
-    cursor: pointer;
-    border: none;
-    background-color: transparent;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: -2px;
-      right: 0px;
-      display: block;
-      width: 50px;
-      height: 4px;
-      background-color: $white;
-      border-radius: 1px;
-      box-shadow: 0 10px $white,
-                  0 20px $white;
-    }
-
-    &:hover::before,
-    &:focus::before {
-      background-color: $red;
-      box-shadow: 0 10px $red,
-                  0 20px $red;
-    }
-
-    &:active::before {
-      opacity: 0.3;
-    }
-  }
-
-  .navigation--opened .navigation__list {
+.navigation--opened .navigation__list {
+  @media (max-width: $tablet-width-only) {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
   }
+}
 
-  .navigation--closed .navigation__list {
+.navigation--closed .navigation__list {
+  @media (max-width: $tablet-width-only) {
     position: absolute;
 
     overflow: hidden;
@@ -175,28 +156,23 @@
 
     clip-path: inset(100%);
   }
+}
 
-  .navigation__item {
+.navigation__item {
+  @media (max-width: $tablet-width-only) {
     text-align: center;
   }
 
-  .navigation__link {
-    font-weight: 700;
-    line-height: 32px;
-    text-transform: uppercase;
+  @media (min-width: $desktop-width) {
+    margin-left: 80px;
 
-    display: block;
-    box-shadow: inset 0px 1px 0px rgba($white, 0.15);
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-bottom: 1px solid $black;
+    &:first-child {
+      margin-left: 0;
+    }
   }
 }
 
 .navigation__link {
-
   font-size: 18px;
   color: $white;
   text-decoration: none;
@@ -209,6 +185,26 @@
 
   &:active {
     color: rgba($red, 0.3);
+  }
+
+  @media (max-width: $tablet-width-only) {
+    font-weight: 700;
+    line-height: 32px;
+    text-transform: uppercase;
+
+    display: block;
+    box-shadow: inset 0 1px 0 rgba($white, 0.15);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 1px solid $black;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-weight: 400;
+    line-height: 18px;
+    position: relative;
   }
 }
 
@@ -223,3 +219,15 @@
   }
 }
 
+.navigation__link--current::before {
+  @media (min-width: $desktop-width) {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: $white;
+    top: 36px;
+    left: 0;
+  }
+}

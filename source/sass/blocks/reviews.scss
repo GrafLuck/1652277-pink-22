@@ -30,8 +30,8 @@
       content: "";
       position: absolute;
       top: -111px;
-      left: 0px;
-      right: 0px;
+      left: 0;
+      right: 0;
       width: 79px;
       height: 63px;
       margin-left: auto;
@@ -41,10 +41,6 @@
       background-position: 0 0;
     }
   }
-}
-
-.reviews__item {
-
 }
 
 .reviews__quote {
