@@ -11,6 +11,19 @@
   margin-bottom: 45px;
 }
 
+.contacts__wrapper {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "phone address email";
+  }
+}
+
 .contacts__map {
   width: 100%;
 }

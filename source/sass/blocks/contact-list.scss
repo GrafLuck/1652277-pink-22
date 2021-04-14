@@ -6,11 +6,24 @@
 
 .contact-list__item {
   margin-bottom: 30px;
+  width: 250px;
+}
+
+.contact-list__item--last-even {
+  @media (min-width: $tablet-width) {
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: address;
+  }
 }
 
 .contact-list__text {
   margin: 0;
   margin-bottom: 5px;
+  text-align: center;
 }
 
 .contact-list__link {

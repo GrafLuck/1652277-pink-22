@@ -12,6 +12,13 @@
   }
 }
 
+.subtitle--small {
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
 .subtitle--medium {
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -36,4 +43,8 @@
   @media (max-width: $tablet-width-only) {
     line-height: 36px;
   }
+}
+
+.subtitle--blue {
+  color: $dark-blue;
 }
