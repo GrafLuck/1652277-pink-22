@@ -25,5 +25,36 @@
 }
 
 .contacts__map {
+  position: relative;
+}
+
+.contacts__superposition {
+  position: absolute;
   width: 100%;
+  background-image: url("../img/triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% auto;
+  z-index: 10;
+
+  @media (min-width: $tablet-width) {
+    height: 123px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 123px;
+  }
+}
+
+.contacts__iframe {
+  border: none;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    height: 374px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 502px;
+  }
 }

@@ -2,12 +2,34 @@
   text-align: center;
   padding-top: 40px;
   padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: auto 1fr 1fr;
+  }
+}
+
+.page-footer__logo {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .page-footer__social {
+  margin: 0;
+  padding: 0;
   margin-top: 38px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    justify-self: end;
+  }
 }
 
 .page-footer__copyright {
   margin-top: 38px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    justify-self: end;
+  }
 }

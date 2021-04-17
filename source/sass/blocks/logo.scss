@@ -1,21 +1,32 @@
 .logo {
   display: block;
+  width: 145px;
+  height: 40px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: flex-end;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 147px;
+  }
 }
 
 .logo__image {
-  &:not(.logo__image--main-page):hover path,
-  &:not(.logo__image--main-page):focus path {
+  &:hover path,
+  &:focus path {
     fill: $red;
   }
 
-  &:not(.logo__image--main-page):active path {
-    fill: $white;
+  &:active path {
     fill-opacity: 0.3;
+  }
+}
+
+.logo__image--header {
+  &:active path {
+    fill: $white;
   }
 }
 
