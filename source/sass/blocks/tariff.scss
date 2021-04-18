@@ -25,9 +25,7 @@
 
 .tariff__list {
   display: grid;
- // grid-template-columns: 100vw; //836px;
   grid-template-rows: auto auto;
-  // transform: translateX(27px);
 
   @media (min-width: $tablet-width) {
     transform: translateX(0);
