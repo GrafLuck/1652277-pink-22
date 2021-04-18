@@ -14,18 +14,18 @@
 }
 
 .logo__image {
-  &:hover path,
-  &:focus path {
+  &:not(.logo__image--main-page):hover path,
+  &:not(.logo__image--main-page):focus path {
     fill: $red;
   }
 
-  &:active path {
+  &:not(.logo__image--main-page):active path {
     fill-opacity: 0.3;
   }
 }
 
 .logo__image--header {
-  &:active path {
+  &:not(.logo__image--main-page):active path {
     fill: $white;
   }
 }

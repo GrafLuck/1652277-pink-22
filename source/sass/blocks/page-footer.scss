@@ -1,17 +1,28 @@
 .page-footer {
   text-align: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 48px;
+  padding-bottom: 36px;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: auto 1fr 1fr;
+    padding-top: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: auto 1fr 1fr;
+    padding-top: 66px;
   }
 }
 
 .page-footer__logo {
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 35px;
+  }
 }
 
 .page-footer__social {

@@ -40,3 +40,17 @@
   font-size: 24px;
   line-height: 33px;
 }
+
+.title--interactive {
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+    color: $dark-blue;
+  }
+
+  &:active {
+    opacity: 0.3;
+    text-decoration: none;
+    outline: none;
+  }
+}

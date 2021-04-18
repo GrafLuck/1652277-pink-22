@@ -3,31 +3,31 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    padding-top: 96px;
+    padding-top: 55px;
     padding-bottom: 120px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 72px;
-    padding-bottom: 163px;
+    padding-top: 27px;
+    padding-bottom: 117px;
     background-color: $grey;
   }
 }
 
 .research__wrapper {
-  position: relative;
-  padding-left: 310px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 
   @media (min-width: $desktop-width) {
-    padding-left: 370px;
+    grid-template-columns: 1fr 570px;
   }
 
   &::before {
     content: "";
     display: block;
-    position: absolute;
-    top: -44px;
-    left: 0;
+    // position: absolute;
+    // top: -44px;
+    // left: 0;
     width: 238px;
     height: 276px;
     background-image: url("../../img/article-timer.svg");
@@ -40,6 +40,14 @@
       width: 298px;
       height: 345px;
     }
+  }
+}
+
+.research__content {
+  padding-top: 43px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 95px;
   }
 }
 
