@@ -5,12 +5,35 @@
 }
 
 .contact-list__item {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.contact-list__item--last-even {
+  @media (min-width: $tablet-width) {
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: address;
+  }
 }
 
 .contact-list__text {
   margin: 0;
-  margin-bottom: 5px;
+  text-align: center;
+  padding-bottom: 5px;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 21px;
+  }
 }
 
 .contact-list__link {

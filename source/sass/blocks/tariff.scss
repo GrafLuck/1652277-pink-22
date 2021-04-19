@@ -4,32 +4,55 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 85px;
-  padding-bottom: 46px;
+  padding-top: 98px;
+  padding-bottom: 50px;
   background-color: $grey;
+  background-image: url("../../img/feature-background.svg");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 100% auto;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 95px;
+    padding-bottom: 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 153px;
+    padding-bottom: 94px;
+  }
 }
 
 .tariff__list {
   display: grid;
-  grid-template-columns: 836px;
   grid-template-rows: auto auto;
+
+  @media (min-width: $tablet-width) {
+    transform: translateX(0);
+  }
 }
 
 .tariff__body {
   display: grid;
   grid-template-rows: auto auto auto;
-  grid-template-columns: auto;
+  // grid-template-columns: auto;
 }
 
 .tariff__row {
   display: grid;
   grid-template-rows: auto;
-  grid-template-columns: 278px 278px 278px;
+  grid-template-columns: 278px 278px 278px; //1fr -> 278px
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 .tariff__item {
+  position: relative;
+  overflow: hidden;
   box-sizing: border-box;
-  width: 278px;
+  //width: 278px; //278px;
   background: $white;
   border: 2px solid $dark-grey;
   border-top: none;
@@ -43,9 +66,32 @@
   padding-right: 20px;
 
   &:last-child {
-    width: 276px;
+    //width: 276px;
     border-right: 2px solid $dark-grey;
   }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 20px;
+    padding-right: 21px;
+  }
+}
+
+.tariff__item--none {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.tariff__item--transparent {
+  background-color: transparent;
+  border-left: none;
 }
 
 .tariff__item--header {
@@ -53,8 +99,8 @@
   // border-color: $dark-blue;
   flex-direction: column;
   justify-content: flex-start;
-  padding-top: 19px;
-  padding-bottom: 35px;
+  padding-top: 13px;
+  padding-bottom: 28px;
   border: 2px solid $grey;
   border-right: none;
   border-bottom: none;
@@ -62,12 +108,50 @@
   &:last-child {
     border-right: 2px solid $dark-blue;
   }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 11px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 21px;
+  }
+}
+
+.tariff__item--popular {
+  &::before {
+    content: "ХИТ";
+    position: absolute;
+    top: 18px;
+    left: -32px;
+    width: 119px;
+    height: 23px;
+    background-color: $red;
+    color: $white;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    transform: rotate(-45deg);
+
+    @media (min-width: $tablet-width) {
+      left: -41px;
+      height: 17px;
+      line-height: 17px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: -32px;
+      height: 23px;
+      line-height: 22px;
+    }
+  }
 }
 
 .tariff__name {
   font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 26px;
 
   text-align: center;
   text-transform: uppercase;
@@ -75,6 +159,11 @@
   color: $white;
 
   margin: 0;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    padding-top: 7px;
+  }
 }
 
 .tariff__price {
@@ -88,9 +177,16 @@
   color: $white;
 
   margin: 0;
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+  }
 }
 
 .tariff__option {
+  margin: 0;
+  padding-top: 14px;
+  padding-bottom: 15px;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
@@ -98,9 +194,39 @@
   text-transform: uppercase;
 
   color: $dark-blue;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+    text-transform: none;
+    padding-top: 8px;
+    padding-bottom: 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+.tariff__option--left {
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.tariff__enabled {
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .tariff__toggles {
   margin-top: 42px;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
