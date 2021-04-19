@@ -13,6 +13,7 @@
 @import "blocks/page-main.scss";
 @import "blocks/download.scss";
 @import "blocks/feature.scss";
+@import "blocks/research.scss";
 @import "blocks/reviews.scss";
 @import "blocks/quote.scss";
 @import "blocks/slider.scss";
@@ -22,7 +23,6 @@
 @import "blocks/page-footer.scss";
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
-@import "blocks/button-download.scss";
 @import "blocks/form.scss";
 @import "blocks/text-input.scss";
 @import "blocks/checkbox.scss";
@@ -31,15 +31,3 @@
 @import "blocks/button.scss";
 @import "blocks/modal.scss";
 @import "blocks/container.scss";
-
-
-
-/*
-Начните вёрстку вашего проекта с помощью препроцессора:
-
-задайте фоновые цвета и фоновые изображения для блоков;
-параметры текста: шрифты, размеры шрифта, межстрочные расстояния, цвет текста;
-добавьте внутренние и внешние отступы и обводки для крупных сеточных блоков.
-Мелкие декоративные элементы можно не верстать.
-
-*/

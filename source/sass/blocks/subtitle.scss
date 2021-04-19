@@ -3,7 +3,48 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  text-align: center;
 
   color: $black;
+
+  @media (min-width: $desktop-width) {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+.subtitle--small {
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.subtitle--medium {
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+  }
+}
+
+.subtitle--big {
+  @media (max-width: $tablet-width-only) {
+    font-size: 30px;
+  }
+}
+
+.subtitle--narrow {
+  line-height: 30px;
+}
+
+.subtitle--wide {
+  @media (max-width: $tablet-width-only) {
+    line-height: 36px;
+  }
+}
+
+.subtitle--blue {
+  color: $dark-blue;
 }

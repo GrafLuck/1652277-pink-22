@@ -1,3 +1,8 @@
+$mobile-width-only: 659px;
+$tablet-width-only: 1199px;
+$tablet-width: 660px;
+$desktop-width: 1200px;
+
 .visually-hidden {
   position: absolute;
 
@@ -26,4 +31,7 @@
   margin: 0;
   width: 100%;
   min-width: 320px;
+  // max-width: 2560px;
+  margin-left: auto;
+  margin-right: auto;
 }

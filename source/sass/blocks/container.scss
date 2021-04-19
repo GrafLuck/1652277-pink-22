@@ -1,8 +1,53 @@
 .container {
   box-sizing: border-box;
   width: 320px;
-  padding-left: 20px;
-  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 660px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 130px;
+    padding-right: 130px;
+    width: 1200px;
+  }
+}
+
+.container--none {
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.container--flex {
+  display: block;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    max-width: 2300px;
+    width: 1200px;
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+}
+
+.container--grid {
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "phone feature-list";
+  }
 }

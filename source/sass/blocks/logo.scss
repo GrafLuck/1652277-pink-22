@@ -1,19 +1,59 @@
 .logo {
+  display: block;
+  width: 145px;
+  height: 40px;
 
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 147px;
+  }
 }
 
-.logo__picture {
+.logo__image {
+  &:not(.logo__image--main-page):hover path,
+  &:not(.logo__image--main-page):focus path {
+    fill: $red;
+  }
 
+  &:not(.logo__image--main-page):active path {
+    fill-opacity: 0.3;
+  }
 }
 
-.logo__picture--red {
-  fill: $red;
+.logo__image--header {
+  &:not(.logo__image--main-page):active path {
+    fill: $white;
+  }
 }
 
-.logo__text {
+.logo__image--mobile {
+  display: block;
 
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
-.logo__text--dark {
-  fill: $dark-blue;
+.logo__image--tablet {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.logo__image--desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }

@@ -3,9 +3,25 @@
   font-size: 14px;
   line-height: 30px;
 
-  text-align: center;
-
   color: $dark-blue;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.text--wide {
+  line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
+}
+
+.text--link {
+  text-decoration: underline;
+  color: $red;
 }
 
 .text--uppercase {
