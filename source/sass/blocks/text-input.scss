@@ -1,9 +1,23 @@
 .text-input {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
 
+  @media (min-width: $tablet-width) {
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .text-input__label {
   margin-left: 21px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    margin-right: 21px;
+  }
 }
 
 .text-input__field {

@@ -1,5 +1,33 @@
 .form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "name"
+    "achieve"
+    "contact"
+    "application"
+    "emotion"
+    "send";
 
+  @media (min-width: $tablet-width) {
+    grid-template-areas:
+      "name"
+      "application"
+      "contact"
+      "achieve"
+      "emotion"
+      "send";
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "name application"
+      "contact contact"
+      "achieve achieve"
+      "emotion emotion"
+      "send send";
+  }
 }
 
 .form__fieldset {
@@ -12,8 +40,32 @@
   }
 }
 
+.form__fieldset--name {
+  grid-area: name;
+}
+
+.form__fieldset--achieve {
+  grid-area: achieve;
+}
+
+.form__fieldset--contact {
+  grid-area: contact;
+}
+
+.form__fieldset--application {
+  grid-area: application;
+}
+
+.form__fieldset--emotion {
+  grid-area: emotion;
+}
+
 .form__fieldset--dark {
   background-color: $grey;
+}
+
+.form__send {
+  grid-area: send;
 }
 
 .form__list {
