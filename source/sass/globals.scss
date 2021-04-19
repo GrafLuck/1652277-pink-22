@@ -1,0 +1,37 @@
+$mobile-width-only: 659px;
+$tablet-width-only: 1199px;
+$tablet-width: 660px;
+$desktop-width: 1200px;
+
+.visually-hidden {
+  position: absolute;
+
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  white-space: nowrap;
+
+  border: 0;
+
+  clip-path: inset(100%);
+}
+
+.page__body {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: $white;
+  margin: 0;
+  width: 100%;
+  min-width: 320px;
+  // max-width: 2560px;
+  margin-left: auto;
+  margin-right: auto;
+}

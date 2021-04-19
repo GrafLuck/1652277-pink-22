@@ -1,0 +1,73 @@
+.contacts {
+  padding-top: 43px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 60px;
+  }
+}
+
+.contacts__question {
+  margin: 0;
+}
+
+.contacts__answer {
+  margin: 0;
+  margin-bottom: 33px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 39px;
+  }
+}
+
+.contacts__wrapper {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    column-gap: 20px;
+    row-gap: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "phone address email";
+  }
+}
+
+.contacts__map {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/triangle-white.svg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% auto;
+    z-index: 10;
+
+    @media (min-width: $tablet-width) {
+      height: 100%;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 123px;
+    }
+  }
+}
+
+.contacts__iframe {
+  border: none;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    height: 374px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 502px;
+    padding-top: 18px;
+  }
+}

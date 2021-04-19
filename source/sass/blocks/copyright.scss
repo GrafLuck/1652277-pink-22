@@ -1,0 +1,23 @@
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover .copyright__logo,
+  &:focus .copyright__logo {
+    fill: $dark-blue;
+  }
+
+  &:active .copyright__logo {
+    fill: $dark-blue;
+    opacity: 0.3;
+  }
+}
+
+.copyright__text {
+  margin-right: 15px;
+}
+
+.copyright__logo {
+  fill: $red;
+}

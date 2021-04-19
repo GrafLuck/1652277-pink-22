@@ -1,0 +1,25 @@
+.text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+
+  color: $dark-blue;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.text--wide {
+  line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
+}
+
+.text--link {
+  text-decoration: underline;
+  color: $red;
+}

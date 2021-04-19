@@ -1,0 +1,56 @@
+.title {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: $white;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
+}
+
+.title--dark {
+  color: $dark-blue;
+}
+
+.title--red {
+  color: $red;
+}
+
+.title--wide {
+  @media (min-width: $tablet-width) {
+    line-height: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 68px;
+  }
+}
+
+.title--small {
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.title--interactive {
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+    color: $dark-blue;
+  }
+
+  &:active {
+    opacity: 0.3;
+    text-decoration: none;
+    outline: none;
+  }
+}
