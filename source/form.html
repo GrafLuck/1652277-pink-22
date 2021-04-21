@@ -91,7 +91,7 @@
         <fieldset class="form__fieldset form__fieldset--achieve form__fieldset--dark">
           <div class="container container--two-columns ">
             <legend class="form__legend label">Ваши безбашенные достижения в путешествии</legend>
-            <ul class="form__list form__list--border">
+            <ul class="form__list form__list--border form__list--achieve">
               <li class="form__item checkbox">
                 <input class="visually-hidden checkbox__input" type="checkbox" name="achievement" value="selfi-shark" id="shark" checked>
                 <label class="checkbox__label label label--choice-input" for="shark">Сделал селфи с акулой</label>
@@ -121,19 +121,15 @@
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--contact">
           <div class="container container--two-columns ">
-            <legend class="visually-hidden">Ваши контакты</legend>
-            <ul class="form__list form__list--border">
-              <li class="form__item form__item--text text-input">
-                <label class="text-input__label label">
-                  Номер телефона
-                  <input class="text-input__field" type="tel" name="tel" placeholder="Номер, пожалуйста">
-                </label>
+            <legend class="form__legend label label--hidden-mobile">Контактная информация</legend>
+            <ul class="form__list form__list--border form__list--contact">
+              <li class="form__item form__item--text text-input text-input--contact">
+                <label class="text-input__label label" for="tel">Номер телефона</label>
+                <input class="text-input__field" type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста">
               </li>
-              <li class="form__item form__item--text text-input">
-                <label class="text-input__label label">
-                  Адрес почты
-                  <input class="text-input__field" type="email" name="email" placeholder="Введите почту *" required>
-                </label>
+              <li class="form__item form__item--text text-input text-input--contact">
+                <label class="text-input__label label" for="email">Адрес почты</label>
+                <input class="text-input__field" type="email" name="email" id="email" placeholder="Введите почту *" required>
               </li>
             </ul>
           </div>
@@ -159,7 +155,7 @@
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--emotion">
           <div class="container container--two-columns">
-            <div class="form__list form__list--border">
+            <div class="form__list form__list--border form__list--emotion">
               <legend class="form__legend label">Опишите свои эмоции</legend>
               <textarea class="form__textarea textarea" name="description" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </div>

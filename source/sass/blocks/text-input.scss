@@ -12,6 +12,15 @@
   }
 }
 
+.text-input--contact {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+
 .text-input__label {
   margin-left: 21px;
 
