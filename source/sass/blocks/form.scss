@@ -27,10 +27,12 @@
       "achieve achieve"
       "emotion emotion"
       "send send";
+    column-gap: 74px;
   }
 }
 
 .form__fieldset {
+  box-sizing: border-box;
   border: none;
   padding: 40px 0;
   margin: 0;
@@ -38,10 +40,19 @@
   &:last-of-type {
     margin-bottom: 0;
   }
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
 }
 
 .form__fieldset--name {
   grid-area: name;
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    height: 100%;
+  }
 }
 
 .form__fieldset--achieve {
@@ -54,6 +65,10 @@
 
 .form__fieldset--application {
   grid-area: application;
+
+  @media (min-width: $tablet-width) {
+
+  }
 }
 
 .form__fieldset--emotion {
@@ -62,6 +77,10 @@
 
 .form__fieldset--dark {
   background-color: $grey;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+  }
 }
 
 .form__send {
@@ -74,12 +93,39 @@
   margin: 0;
 }
 
+.form__list--name {
+  @media (min-width: $desktop-width) {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.form__list--application {
+  @media (min-width: $desktop-width) {
+    margin-left: 74px;
+  }
+}
+
+.form__list--border {
+  @media (min-width: $tablet-width) {
+    border: 2px solid $dark-grey;
+    border-radius: 1px;
+    padding: 52px 0;
+  }
+}
+
 .form__item {
   margin-bottom: 43px;
 }
 
 .form__item--text {
   margin-bottom: 15px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .form__legend {
@@ -87,6 +133,18 @@
   margin-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: -17px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    width: auto;
+  }
 }
 
 .form__textarea {
