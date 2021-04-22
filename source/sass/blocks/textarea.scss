@@ -2,10 +2,11 @@
   display: block;
   box-sizing: border-box;
   width: 100%;
-  height: 197px;
+  min-height: 197px;
   border: 2px solid $dark-grey;
   border-radius: 1px;
   padding: 22px 20px;
+  resize: none;
 
   &::placeholder {
     font-family: "Open Sans", "Arial", sans-serif;
@@ -15,5 +16,9 @@
     line-height: 30px;
 
     color: $dark-blue;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 128px;
   }
 }

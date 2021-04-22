@@ -28,6 +28,7 @@
       "emotion emotion"
       "send send";
     column-gap: 74px;
+    row-gap: 69px;
   }
 }
 
@@ -43,6 +44,10 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
 
@@ -112,17 +117,32 @@
   @media (min-width: $tablet-width) {
     padding: 46px 60px 69px 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 74px;
+  }
 }
 
 .form__list--achieve {
   @media (min-width: $tablet-width) {
     padding: 60px 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: max-content max-content max-content;
+    grid-template-rows: auto auto;
+    column-gap: 55px;
+    row-gap: 47px;
+    grid-auto-flow: column;
+  }
 }
 
 .form__list--emotion {
   @media (min-width: $tablet-width) {
-    padding: 47px 60px 53px 60px;
+    padding: 47px 60px 43px 60px;
   }
 }
 
@@ -151,6 +171,12 @@
   }
 }
 
+.form__item--checkbox {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
 .form__legend {
   text-align: center;
   margin-bottom: 40px;
@@ -171,10 +197,30 @@
     background-color: white;
     max-width: max-content;
   }
+
+  @media (min-width: $desktop-width) {
+    top: -15px;
+  }
 }
 
 .form__textarea {
   margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.form__flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .form__button {

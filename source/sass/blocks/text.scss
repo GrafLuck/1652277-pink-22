@@ -32,6 +32,22 @@
   color: $red;
 }
 
+.text--tablet-visible {
+    isplay: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
+}
+
+.text--only-desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+  }
+}
+
 .text--narrow {
   line-height: 24px;
 }

@@ -9,3 +9,12 @@
     margin-top: -110px;
   }
 }
+
+.page-main__text {
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 490px;
+    margin: 0 auto;
+  }
+}
