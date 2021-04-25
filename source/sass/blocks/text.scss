@@ -1,7 +1,7 @@
 .text {
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 30px;
 
   color: $dark-blue;
 
@@ -22,4 +22,40 @@
 .text--link {
   text-decoration: underline;
   color: $red;
+}
+
+.text--uppercase {
+  text-transform: uppercase;
+
+  @media (min-width: $desktop-width) {
+    font-size: 14px;
+  }
+}
+
+.text--attention {
+  color: $red;
+}
+
+.text--tablet-visible {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
+}
+
+.text--only-desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+  }
+}
+
+.text--narrow {
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
 }

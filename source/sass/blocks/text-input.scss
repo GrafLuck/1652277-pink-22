@@ -1,0 +1,72 @@
+.text-input {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 18px;
+  }
+}
+
+.text-input--contact {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+
+.text-input__label {
+  margin-left: 23px;
+  margin-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+}
+
+.text-input__label--contact {
+  @media (min-width: $tablet-width) {
+    margin-left: 16px;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+}
+
+.text-input__field {
+  box-sizing: border-box;
+  width: 100%;
+  height: 62px;
+  border: 2px solid $dark-grey;
+  border-radius: 1px;
+  padding: 15px 20px;
+  outline: none;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+
+  &::placeholder {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+
+    color: $dark-blue;
+  }
+
+  &:hover,
+  &:focus {
+    border: 2px solid $dark-blue;
+  }
+
+  &:active {
+    border: 2px solid $red;
+  }
+}

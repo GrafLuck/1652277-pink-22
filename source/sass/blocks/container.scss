@@ -51,3 +51,20 @@
     grid-template-areas: "phone feature-list";
   }
 }
+
+.container--two-columns {
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+    width: auto;
+    height: 100%;
+  }
+}
+
+.container--only-desktop {
+  @media (max-width: $tablet-width-only) {
+    width: 100%;
+    padding: 0;
+    background-color: white;
+  }
+}

@@ -1,0 +1,40 @@
+.label {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  color: $red;
+}
+
+.label--narrow {
+  line-height: 18px;
+}
+
+.label--choice-input {
+  font-size: 18px;
+  color: $dark-blue;
+  text-transform: none;
+}
+
+.label--hidden-mobile {
+  @media (max-width: $mobile-width-only) {
+    position: absolute;
+
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+
+    white-space: nowrap;
+
+    border: 0;
+
+    clip-path: inset(100%);
+  }
+}

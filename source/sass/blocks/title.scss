@@ -41,6 +41,16 @@
   line-height: 33px;
 }
 
+.title--form {
+  font-size: 24px;
+  line-height: 33px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
+}
+
 .title--interactive {
   &:hover,
   &:focus {
