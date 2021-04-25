@@ -2,11 +2,15 @@
   display: block;
   box-sizing: border-box;
   width: 100%;
-  min-height: 197px;
+  height: 200px;
   border: 2px solid $dark-grey;
   border-radius: 1px;
-  padding: 22px 20px;
+  padding: 15px 20px;
   resize: none;
+  outline: none;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
 
   &::placeholder {
     font-family: "Open Sans", "Arial", sans-serif;
@@ -18,7 +22,21 @@
     color: $dark-blue;
   }
 
+  &:hover,
+  &:focus {
+    border: 2px solid $dark-blue;
+  }
+
+  &:active {
+    border: 2px solid $red;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 190px;
+    padding: 13px 18px;
+  }
+
   @media (min-width: $desktop-width) {
-    min-height: 128px;
+    height: 128px;
   }
 }

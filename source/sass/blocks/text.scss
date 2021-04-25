@@ -26,6 +26,10 @@
 
 .text--uppercase {
   text-transform: uppercase;
+
+  @media (min-width: $desktop-width) {
+    font-size: 14px;
+  }
 }
 
 .text--attention {
@@ -33,7 +37,7 @@
 }
 
 .text--tablet-visible {
-    isplay: none;
+    display: none;
 
   @media (min-width: $tablet-width) {
     display: inline;

@@ -44,5 +44,31 @@
   background: $green;
   border: 2px solid $green;
   border-radius: 1px;
-  padding: 23px 45px;
+  padding: 15px 45px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $white;
+    background: $dark-green;
+    border-color: $dark-green;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+  }
+
+  &:disabled {
+    background: $dark-grey;
+    border-color: $dark-grey;
+    color: $white;
+  }
 }

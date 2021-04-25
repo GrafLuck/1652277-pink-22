@@ -17,6 +17,7 @@
       "achieve"
       "emotion"
       "send";
+    margin-bottom: 41px;
   }
 
   @media (min-width: $desktop-width) {
@@ -28,14 +29,15 @@
       "emotion emotion"
       "send send";
     column-gap: 74px;
-    row-gap: 69px;
+    margin-top: 80px;
+    margin-bottom: -2px;
   }
 }
 
 .form__fieldset {
   box-sizing: border-box;
   border: none;
-  padding: 40px 0;
+  padding: 22px 0 25px 0;
   margin: 0;
 
   &:last-of-type {
@@ -54,30 +56,68 @@
 .form__fieldset--name {
   grid-area: name;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    margin-top: 73px;
+  }
+
   @media (min-width: $desktop-width) {
     padding: 0;
+    padding-top: 7px;
+    margin-top: 0;
     height: 100%;
   }
 }
 
 .form__fieldset--achieve {
   grid-area: achieve;
+  padding-top: 38px;
+  padding-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    margin-top: 41px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 67px;
+  }
 }
 
 .form__fieldset--contact {
   grid-area: contact;
+  padding-top: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 5px;
+    margin-top: 61px;
+  }
 }
 
 .form__fieldset--application {
   grid-area: application;
+  padding-top: 37px;
+  padding-bottom: 0;
 
   @media (min-width: $tablet-width) {
+    padding-top: 0;
+    margin-top: 41px;
+  }
 
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
   }
 }
 
 .form__fieldset--emotion {
   grid-area: emotion;
+  padding-top: 33px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 6px;
+    padding-bottom: 22px;
+    margin-top: 59px;
+  }
 }
 
 .form__fieldset--dark {
@@ -90,6 +130,12 @@
 
 .form__send {
   grid-area: send;
+  padding-top: 13px;
+  padding-bottom: 7px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 42px;
+  }
 }
 
 .form__list {
@@ -109,25 +155,32 @@
 
 .form__list--application {
   @media (min-width: $tablet-width) {
-    padding: 54px 60px;
+    padding: 56px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 57px 72px;
   }
 }
 
 .form__list--contact {
   @media (min-width: $tablet-width) {
-    padding: 46px 60px 69px 60px;
+    padding: 46px 60px 27px 60px;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 74px;
+    align-items: flex-start;
+    padding-top: 43px;
+    padding-bottom: 12px;
   }
 }
 
 .form__list--achieve {
   @media (min-width: $tablet-width) {
-    padding: 60px 60px;
+    padding: 54px 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -135,14 +188,20 @@
     grid-template-columns: max-content max-content max-content;
     grid-template-rows: auto auto;
     column-gap: 55px;
-    row-gap: 47px;
+    row-gap: 49px;
     grid-auto-flow: column;
+    padding-bottom: 60px;
   }
 }
 
 .form__list--emotion {
   @media (min-width: $tablet-width) {
-    padding: 47px 60px 43px 60px;
+    padding: 47px 60px 51px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 42px;
+    padding-bottom: 43px;
   }
 }
 
@@ -164,14 +223,58 @@
 }
 
 .form__item--text {
-  margin-bottom: 15px;
+  margin-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 53px;
+  }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
   }
 }
 
+.form__item--contact {
+  margin-bottom: 18px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 2px;
+        top: 2px;
+        height: 58px;
+        width: 58px;
+        background-color: $dark-grey;
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+    }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.form__item--phone {
+  &::after {
+    content: "";
+    background-image: url(../img/icon-phone.svg);
+  }
+}
+
+.form__item--mail {
+  &::after {
+    content: "";
+    background-image: url(../img/icon-mail.svg);
+  }
+}
+
 .form__item--checkbox {
+  margin-bottom: 50px;
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
   }
@@ -186,7 +289,7 @@
   @media (min-width: $tablet-width) {
     display: block;
     position: absolute;
-    top: 25px;
+    top: -7px;
     left: 0;
     right: 0;
     z-index: 2;
@@ -194,12 +297,21 @@
     padding-right: 25px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 0;
     background-color: white;
     max-width: max-content;
   }
 
   @media (min-width: $desktop-width) {
-    top: -15px;
+    top: -7px;
+  }
+}
+
+.form__legend--margin {
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
   }
 }
 
@@ -228,5 +340,9 @@
 }
 
 .form__footnote {
+  margin: 34px 0 0 0;
 
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
 }

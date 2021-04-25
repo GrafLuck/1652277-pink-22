@@ -4,7 +4,11 @@
 
 .radio__label  {
   position: relative;
-  padding-left: 60px;
+  padding-left: 70px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 59px;
+  }
 
   &::before {
     content: "";

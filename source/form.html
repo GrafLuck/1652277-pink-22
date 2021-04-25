@@ -62,14 +62,16 @@
       </div>
     </header>
     <main class="page-main">
-      <div class="page-main__wrapper">
+      <div class="page-main__wrapper competition">
         <div class="container">
-          <h1 class="page-main__title title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+          <h1 class="competition__title title title--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
         </div>
       </div>
       <div class="container container--only-desktop">
-        <p class="page-main__text text text--wide">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000  миль на вашу бонусную карту! <span class="text text--wide text--tablet-visible">Пожалуйста, заполните форму ниже:</span>
-        </p>
+        <div class="container container--two-columns">
+          <p class="page-main__text text text--wide">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000  миль на вашу бонусную карту! <span class="text text--wide text--tablet-visible">Пожалуйста, заполните форму ниже:</span>
+          </p>
+        </div>
         <form class="form" method="POST" action="https://echo.htmlacademy.ru">
           <fieldset class="form__fieldset form__fieldset--name">
             <div class="container container--two-columns">
@@ -92,7 +94,7 @@
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--achieve form__fieldset--dark">
             <div class="container container--two-columns ">
-              <legend class="form__legend label">Ваши безбашенные достижения в путешествии</legend>
+              <legend class="form__legend label label--narrow">Ваши безбашенные достижения&nbsp;в&nbsp;путешествии</legend>
               <ul class="form__list form__list--border form__list--achieve">
                 <li class="form__item form__item--checkbox checkbox">
                   <input class="visually-hidden checkbox__input" type="checkbox" name="achievement" value="selfi-shark" id="shark" checked>
@@ -125,20 +127,20 @@
             <div class="container container--two-columns ">
               <legend class="form__legend label label--hidden-mobile">Контактная информация</legend>
               <ul class="form__list form__list--border form__list--contact">
-                <li class="form__item form__item--text text-input text-input--contact">
-                  <label class="text-input__label label" for="tel">Номер телефона</label>
-                  <input class="text-input__field" type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста">
+                <li class="form__item form__item--contact form__item--phone text-input text-input--contact">
+                  <label class="text-input__label text-input__label--contact label" for="tel">Номер телефона</label>
+                  <input class="text-input__field text-input__field--icon" type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста">
                 </li>
-                <li class="form__item form__item--text text-input text-input--contact">
-                  <label class="text-input__label label" for="email">Адрес почты</label>
-                  <input class="text-input__field" type="email" name="email" id="email" placeholder="Введите почту *" required>
+                <li class="form__item form__item--contact form__item--mail text-input text-input--contact">
+                  <label class="text-input__label text-input__label--contact label" for="email">Адрес почты</label>
+                  <input class="text-input__field text-input__field--icon" type="email" name="email" id="email" placeholder="Введите почту *" required>
                 </li>
               </ul>
             </div>
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--application form__fieldset--dark">
             <div class="container container--two-columns">
-              <legend class="form__legend label">С каким приложением путешествовали?</legend>
+              <legend class="form__legend label label--narrow">С каким приложением путешествовали?</legend>
               <ul class="form__list form__list--border form__list--application">
                 <li class="form__item radio">
                   <input class="visually-hidden radio__input" type="radio" name="application" value="ios" id="ios" checked>
@@ -158,7 +160,7 @@
           <fieldset class="form__fieldset form__fieldset--emotion">
             <div class="container container--two-columns">
               <div class="form__list form__list--border form__list--emotion">
-                <legend class="form__legend label">Опишите свои эмоции</legend>
+                <legend class="form__legend form__legend--margin label">Опишите свои эмоции</legend>
                 <textarea class="form__textarea textarea" name="description" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
               </div>
             </div>
@@ -167,7 +169,7 @@
             <div class="container container--two-columns">
               <div class="form__flex">
                 <button class="form__button button button--square" type="submit">Отправить форму</button>
-                <p class="form__footnote text text--uppercase"><span class="text text--attention">*</span> — обязательные <span class="text text--only-desktop">для заполнения</span> поля</p>
+                <p class="form__footnote text text--uppercase"><span class="text text--attention ">*</span> — обязательные <span class="text text--only-desktop text--uppercase">для заполнения</span> поля</p>
               </div>
             </div>
           </div>
