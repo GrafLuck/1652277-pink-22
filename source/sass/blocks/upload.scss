@@ -1,0 +1,54 @@
+.upload {
+  margin-bottom: -9px;
+}
+
+.upload__form {
+  position: relative;
+  background-color: $grey;
+  padding-top: 20px;
+  padding-bottom: 40px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 185px;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: $dark-blue;
+    opacity: 0.1;
+  }
+}
+
+.upload__text {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 42px;
+}
+
+.upload__label {
+  display: block;
+  margin-bottom: 35px;
+}
+
+.upload__list {
+  margin: 0;
+  padding: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 35px;
+  padding-bottom: 75px;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+
+.upload__control {
+  display: flex;
+  flex-direction: column;
+}
+
+.upload__submit {
+  margin-bottom: 12px;
+}

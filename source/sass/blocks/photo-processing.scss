@@ -1,0 +1,96 @@
+.photo-processing__button {
+  width: 48px;
+  height: 48px;
+  background-color: transparent;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: left center;
+
+  &:not(.photo-processing__button--active):hover,
+  &:not(.photo-processing__button--active):focus {
+    cursor: pointer;
+    opacity: 0.5;
+  }
+}
+
+.photo-processing__button--crop {
+  background-image: url("../img/icon-crop.svg");
+
+  &.photo-processing__button--active {
+    background-image: url("../img/icon-crop-active.svg");
+  }
+}
+
+.photo-processing__button--fill {
+  background-image: url("../img/icon-fill.svg");
+  opacity: 0.3;
+
+  &.photo-processing__button--active {
+    background-image: url("../img/icon-fill-active.svg");
+    opacity: 1;
+  }
+}
+
+.photo-processing__button--contrast {
+  background-image: url("../img/icon-contrast.svg");
+  opacity: 0.3;
+
+  &.photo-processing__button--active {
+    background-image: url("../img/icon-contrast-active.svg");
+    opacity: 1;
+  }
+}
+
+.photo-processing__range {
+  position: absolute;
+  bottom: 27px;
+  left: 0;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  width: 100%;
+  background: transparent;
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    box-sizing: border-box;
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    border: 2px solid $red;
+    background: $white;
+    cursor: pointer;
+    // margin-top: -14px;
+
+    &:active {
+      background: $red;
+    }
+  }
+
+  &::-moz-range-thumb {
+    box-sizing: border-box;
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    border: 2px solid $red;
+    background: $white;
+    cursor: pointer;
+
+    &:active {
+      background: $red;
+    }
+  }
+
+  &::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 2px;
+    cursor: pointer;
+    background-color: $dark-blue;
+  }
+
+  &::-moz-range-track {
+    width: 100%;
+    height: 2px;
+    cursor: pointer;
+    background-color: $dark-blue;
+  }
+}

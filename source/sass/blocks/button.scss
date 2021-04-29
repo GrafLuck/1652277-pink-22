@@ -10,6 +10,7 @@
   text-align: center;
 
   color: $white;
+  background-color: transparent;
 
   border: 3px solid $white;
   box-sizing: border-box;
@@ -70,6 +71,39 @@
     background: $dark-grey;
     border-color: $dark-grey;
     color: $white;
+  }
+}
+
+.button--submit {
+  color: $red;
+  border-color: $red;
+
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: $red;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+  }
+}
+
+.button--reset {
+  color: rgba($dark-blue, 0.1);
+  border-color: rgba($dark-blue, 0.1);
+
+  &:hover,
+  &:focus {
+    color: rgba($dark-blue, 0.3);
+    border-color: rgba($dark-blue, 0.3);
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+    border-color: rgba($dark-blue, 0.3);
+    background-color: rgba($dark-blue, 0.3);
+    outline: none;
   }
 }
 
