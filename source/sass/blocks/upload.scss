@@ -54,6 +54,7 @@
 .upload__label {
   display: block;
   margin-bottom: 35px;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     grid-row: 1 / -1;
@@ -65,6 +66,7 @@
   width: 280px;
   height: 374px;
   vertical-align: middle;
+
 
   @media (min-width: $tablet-width) {
     width: 300px;
