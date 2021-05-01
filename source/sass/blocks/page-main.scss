@@ -13,9 +13,9 @@
 
 .page-main__text {
   text-align: center;
-  margin-top: -224px;
   padding-top: 44px;
   padding-bottom: 0;
+  width: 280px;
 
   @media (min-width: $tablet-width) {
     width: 490px;
@@ -26,4 +26,9 @@
   @media (min-width: $desktop-width) {
     width: 780px;
   }
+}
+
+.page-main__text--size {
+  padding-bottom: 50px;
+  margin-bottom: 0;
 }

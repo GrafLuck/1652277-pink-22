@@ -1,0 +1,140 @@
+.upload {
+  margin-bottom: -9px;
+}
+
+.upload__form {
+  position: relative;
+  background-color: $grey;
+  padding-top: 20px;
+  padding-bottom: 40px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 185px;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: $dark-blue;
+    opacity: 0.1;
+
+    @media (min-width: $tablet-width) {
+      content: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    box-sizing: border-box;
+    width: 940px;
+    padding: 57px 60px 57px 80px;
+  }
+}
+
+.upload__inner {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 90px;
+  }
+}
+
+.upload__text {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 42px;
+}
+
+.upload__label {
+  display: block;
+  margin-bottom: 35px;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 1 / -1;
+    margin-bottom: 0;
+  }
+}
+
+.upload__image {
+  width: 280px;
+  height: 374px;
+  vertical-align: middle;
+
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    height: 400px;
+  }
+}
+
+.upload__list {
+  margin: 0;
+  padding: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 35px;
+  padding-bottom: 75px;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.upload__item {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 17px;
+    border-bottom: 1px solid rgba($dark-blue, 0.1);
+  }
+
+  &:last-child {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      border-bottom: none;
+    }
+  }
+}
+
+.upload__control {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 13px;
+    justify-content: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
+.upload__submit {
+  margin-bottom: 12px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
