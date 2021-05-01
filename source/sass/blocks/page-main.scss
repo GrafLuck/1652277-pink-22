@@ -13,9 +13,9 @@
 
 .page-main__text {
   text-align: center;
-  margin-top: -224px;
   padding-top: 44px;
   padding-bottom: 0;
+  width: 280px;
 
   @media (min-width: $tablet-width) {
     width: 490px;

@@ -1,20 +1,54 @@
+.photo-processing {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    height: 55px;
+    align-items: center;
+    padding-right: 18px;
+  }
+}
+
 .photo-processing__button {
   width: 48px;
   height: 48px;
   background-color: transparent;
   border: none;
   background-repeat: no-repeat;
-  background-position: left center;
+  background-position: center center;
+
+  @media (min-width: $tablet-width) {
+    width: 24px;
+    height: 24px;
+    margin-right: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 48px;
+    height: 48px;
+  }
 
   &:not(.photo-processing__button--active):hover,
   &:not(.photo-processing__button--active):focus {
     cursor: pointer;
     opacity: 0.5;
+
+    @media (min-width: $tablet-width) {
+      cursor: default;
+      opacity: 1;
+    }
   }
 }
 
 .photo-processing__button--crop {
   background-image: url("../img/icon-crop.svg");
+
+  @media (min-width: $tablet-width) {
+    background-size: 22px 22px;
+    background-image: url("../img/icon-crop-active.svg");
+  }
+
+  @media (min-width: $desktop-width) {
+    background-size: 44px 44px;
+  }
 
   &.photo-processing__button--active {
     background-image: url("../img/icon-crop-active.svg");
@@ -25,6 +59,16 @@
   background-image: url("../img/icon-fill.svg");
   opacity: 0.3;
 
+  @media (min-width: $tablet-width) {
+    background-size: 24px 22px;
+    background-image: url("../img/icon-fill-active.svg");
+    opacity: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-size: 48px 43px;
+  }
+
   &.photo-processing__button--active {
     background-image: url("../img/icon-fill-active.svg");
     opacity: 1;
@@ -34,6 +78,16 @@
 .photo-processing__button--contrast {
   background-image: url("../img/icon-contrast.svg");
   opacity: 0.3;
+
+  @media (min-width: $tablet-width) {
+    background-size: 16px 16px;
+    background-image: url("../img/icon-contrast-active.svg");
+    opacity: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-size: 32px 32px;
+  }
 
   &.photo-processing__button--active {
     background-image: url("../img/icon-contrast-active.svg");
@@ -50,6 +104,10 @@
   width: 100%;
   background: transparent;
 
+  @media (min-width: $tablet-width) {
+    position: static;
+  }
+
   &::-webkit-slider-thumb {
     -webkit-appearance: none;
     box-sizing: border-box;
@@ -59,7 +117,7 @@
     border: 2px solid $red;
     background: $white;
     cursor: pointer;
-    // margin-top: -14px;
+    margin-top: -6px;
 
     &:active {
       background: $red;
@@ -92,5 +150,25 @@
     height: 2px;
     cursor: pointer;
     background-color: $dark-blue;
+  }
+}
+
+.photo-processing__range-hidden {
+  @media (max-width: $mobile-width-only) {
+    position: absolute;
+
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+
+    white-space: nowrap;
+
+    border: 0;
+
+    clip-path: inset(100%);
   }
 }
