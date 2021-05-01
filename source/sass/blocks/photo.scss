@@ -17,10 +17,6 @@
   }
 }
 
-.photo__link {
-
-}
-
 .photo__wrapper-info {
   display: grid;
   grid-template-rows: auto auto;
@@ -71,7 +67,7 @@
     grid-template-columns: 1fr 150px;
     grid-template-rows: auto auto;
     grid-template-areas: "name like"
-    "description description";
+      "description description";
 
     padding-top: 526px;
     margin-top: -509px;
@@ -195,5 +191,3 @@
 
   color: $red;
 }
-
-
