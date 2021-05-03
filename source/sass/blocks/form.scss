@@ -39,13 +39,14 @@
   border: none;
   padding: 22px 0 25px 0;
   margin: 0;
+  position: relative;
 
   &:last-of-type {
     margin-bottom: 0;
   }
 
   @media (min-width: $tablet-width) {
-    position: relative;
+
   }
 
   @media (min-width: $desktop-width) {
@@ -71,7 +72,7 @@
 
 .form__fieldset--achieve {
   grid-area: achieve;
-  padding-top: 38px;
+  padding-top: 113px;
   padding-bottom: 0;
 
   @media (min-width: $tablet-width) {
@@ -96,7 +97,7 @@
 
 .form__fieldset--application {
   grid-area: application;
-  padding-top: 37px;
+  padding-top: 113px;
   padding-bottom: 0;
 
   @media (min-width: $tablet-width) {
@@ -111,7 +112,7 @@
 
 .form__fieldset--emotion {
   grid-area: emotion;
-  padding-top: 33px;
+  padding-top: 73px;
 
   @media (min-width: $tablet-width) {
     padding-top: 6px;
@@ -282,22 +283,23 @@
 }
 
 .form__legend {
+  position: absolute;
+  top: 36px;
+  left: 0;
+  right: 0;
   text-align: center;
   margin-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media (min-width: $tablet-width) {
     display: block;
-    position: absolute;
     top: -7px;
-    left: 0;
-    right: 0;
     z-index: 2;
     padding-left: 25px;
     padding-right: 25px;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 0;
     background-color: white;
     max-width: max-content;
