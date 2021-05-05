@@ -2,19 +2,32 @@
   box-sizing: border-box;
   min-height: 237px;
   background-color: $blue;
-  background-image: url("../img/background-tablet.jpg");
+  background-image: url("../img/background/background-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: auto auto;
+  background-size: cover;
   padding-top: 95px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background/background-mobile@2x.jpg");
+  }
 
   @media (min-width: $tablet-width) {
     min-height: 440px;
+    background-image: url("../img/background/background-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/background-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../img/background-desktop.jpg");
-    min-height: 394px;
+    background-image: url("../img/background/background-desktop.jpg");
+    min-height: 853px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/background-desktop@2x.jpg");
+    }
   }
 }
 
@@ -27,5 +40,15 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 76px;
+    width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
+
+.competition__title--wide {
+  @media (min-width: $desktop-width) {
+    width: 850px;
   }
 }

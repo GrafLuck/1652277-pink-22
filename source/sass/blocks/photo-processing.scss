@@ -1,9 +1,16 @@
 .photo-processing {
   @media (min-width: $tablet-width) {
+    box-sizing: border-box;
     display: flex;
     height: 55px;
     align-items: center;
     padding-right: 18px;
+    padding-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 27px;
+    padding-bottom: 14px;
   }
 }
 
@@ -13,7 +20,7 @@
   background-color: transparent;
   border: none;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center bottom;
 
   @media (min-width: $tablet-width) {
     width: 24px;
@@ -24,6 +31,7 @@
   @media (min-width: $desktop-width) {
     width: 48px;
     height: 48px;
+    margin-right: 49px;
   }
 
   &:not(.photo-processing__button--active):hover,
@@ -67,6 +75,8 @@
 
   @media (min-width: $desktop-width) {
     background-size: 48px 43px;
+    background-position: center center;
+    margin-left: 4px;
   }
 
   &.photo-processing__button--active {
@@ -78,9 +88,11 @@
 .photo-processing__button--contrast {
   background-image: url("../img/icon-contrast.svg");
   opacity: 0.3;
+  background-position: 1px 11px;
 
   @media (min-width: $tablet-width) {
     background-size: 16px 16px;
+    background-position: center;
     background-image: url("../img/icon-contrast-active.svg");
     opacity: 1;
   }
@@ -97,7 +109,7 @@
 
 .photo-processing__range {
   position: absolute;
-  bottom: 27px;
+  bottom: 31px;
   left: 0;
   box-sizing: border-box;
   appearance: none;
