@@ -39,13 +39,12 @@
 .tariff__body {
   display: grid;
   grid-template-rows: auto auto auto;
-  // grid-template-columns: auto;
 }
 
 .tariff__row {
   display: grid;
   grid-template-rows: auto;
-  grid-template-columns: 278px 278px 278px; //1fr -> 278px
+  grid-template-columns: 278px 278px 278px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -56,7 +55,6 @@
   position: relative;
   overflow: hidden;
   box-sizing: border-box;
-  //width: 278px; //278px;
   background: $white;
   border: 2px solid $dark-grey;
   border-top: none;
@@ -70,7 +68,6 @@
   padding-right: 20px;
 
   &:last-child {
-    //width: 276px;
     border-right: 2px solid $dark-grey;
   }
 
@@ -100,7 +97,6 @@
 
 .tariff__item--header {
   background: $dark-blue;
-  // border-color: $dark-blue;
   flex-direction: column;
   justify-content: flex-start;
   padding-top: 13px;
