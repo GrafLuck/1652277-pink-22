@@ -7,19 +7,23 @@
   padding-top: 98px;
   padding-bottom: 50px;
   background-color: $grey;
-  background-image: url("../img/feature-background.svg");
+  background-image: url("../img/background-mobile-tariff.svg");
   background-repeat: no-repeat;
   background-position: left top;
-  background-size: 100% auto;
+  background-size: 100% 19px;
 
   @media (min-width: $tablet-width) {
     padding-top: 95px;
     padding-bottom: 67px;
+    background-image: url("../img/background-tablet.svg");
+    background-size: 100% 41px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 153px;
     padding-bottom: 94px;
+    background-image: url("../img/background-desktop.svg");
+    background-size: 100% 100px;
   }
 }
 

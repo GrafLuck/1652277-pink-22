@@ -7,7 +7,6 @@
 
   @media (min-width: $desktop-width) {
     font-size: 18px;
-    line-height: 30px;
   }
 }
 
@@ -57,5 +56,14 @@
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
+  }
+}
+
+.text--feature {
+  line-height: 24px;
+
+  @media (min-width: $desktop-width) {
+    line-height: 30px;
+    // width: 249px;
   }
 }
