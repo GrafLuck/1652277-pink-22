@@ -43,7 +43,7 @@
     content: "";
     position: absolute;
     top: 0;
-    height: 100%;
+    height: 33px;
     width: 100%;
     background-image: url("../img/triangle-contact-mobile-tablet.svg");
     background-repeat: no-repeat;
@@ -52,14 +52,33 @@
     z-index: 10;
 
     @media (min-width: $tablet-width) {
+      height: 69px;
       background-image: url("../img/triangle-contact-desktop.svg");
       background-size: 100% 69px;
     }
 
     @media (min-width: $desktop-width) {
+      height: 124px;
       background-image: url("../img/triangle-contact-desktop.svg");
       background-size: 100% 124px;
     }
+  }
+}
+
+.contacts__map--no-js {
+  background-image: url("../img/map.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/map@2x.png");
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
   }
 }
 

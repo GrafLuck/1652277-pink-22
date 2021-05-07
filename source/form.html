@@ -60,7 +60,7 @@
             <p class="page-main__text text text--wide">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000  миль на вашу бонусную карту! <span class="text text--wide text--tablet-visible">Пожалуйста, заполните форму ниже:</span>
             </p>
           </div>
-          <form class="form" method="POST" action="https://echo.htmlacademy.ru">
+          <form class="form" target="_blank" method="POST" action="https://echo.htmlacademy.ru">
             <fieldset class="form__fieldset form__fieldset--name">
               <legend class="visually-hidden">Как Вас зовут?</legend>
               <div class="container container--two-columns">
@@ -205,7 +205,7 @@
         </a>
       </div>
     </footer>
-    <section class="modal modal--close">
+    <section class="modal modal__error modal--close">
       <div class="modal__top">
         <div class="modal__wrapper">
           <h2 class="modal__title">Что-то пошло не&nbsp;так!</h2>
@@ -214,11 +214,11 @@
       </div>
       <div class="modal__bottom modal__bottom--transparent">
         <div class="modal__wrapper modal__wrapper--narrow">
-          <button class="modal__button button button--square">Ок</button>
+          <button class="modal__button button button--square no">Ок</button>
         </div>
       </div>
     </section>
-    <section class="modal modal--close">
+    <section class="modal modal__submit modal--close">
       <div class="modal__top">
         <div class="modal__wrapper modal__wrapper--wide">
           <h2 class="modal__title">Ваша заявка отправлена</h2>
@@ -227,10 +227,11 @@
       </div>
       <div class="modal__bottom">
         <div class="modal__wrapper">
-          <button class="modal__button button button--square">Закрыть окно</button>
+          <button class="modal__button button button--square yes">Закрыть окно</button>
         </div>
       </div>
     </section>
     <script src="js/navigation.js"></script>
+    <script src="js/popup.js"></script>
   </body>
 </html>

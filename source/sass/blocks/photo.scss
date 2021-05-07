@@ -44,6 +44,7 @@
   background-color: $grey;
   padding-top: 154px;
   margin-top: -137px;
+  padding-bottom: 19px;
 
   &::before {
     content: "Панорама дня";
@@ -80,7 +81,7 @@
 
     padding-top: 532px;
     padding-bottom: 15px;
-    margin-top: -509px;
+    margin-top: -507px;
   }
 }
 
@@ -191,7 +192,12 @@
   background-repeat: no-repeat;
   width: 13px;
   height: 12px;
-  margin-right: 20px;
+  margin-right: 19px;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
 
   @media (min-width: $tablet-width) {
     margin-right: 20px;

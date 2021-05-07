@@ -104,7 +104,7 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    display: flex;
+    display: block;
     flex-direction: column;
     justify-content: flex-start;
     padding-bottom: 0;
@@ -116,7 +116,7 @@
 
 .upload__item {
   @media (min-width: $tablet-width) {
-    margin-bottom: 17px;
+    margin-bottom: 16px;
     border-bottom: 1px solid rgba($dark-blue, 0.1);
   }
 

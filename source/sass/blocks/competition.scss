@@ -4,8 +4,7 @@
   background-color: $blue;
   background-image: url("../img/background/background-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
+  background-position: center bottom -222px;
   padding-top: 95px;
 
   @media (min-resolution: 2dppx) {
@@ -14,6 +13,7 @@
 
   @media (min-width: $tablet-width) {
     min-height: 440px;
+    background-position: center top;
     background-image: url("../img/background/background-tablet.jpg");
 
     @media (min-resolution: 2dppx) {

@@ -162,7 +162,7 @@
 
   @media (min-width: $desktop-width) {
     font-size: 18px;
-    padding-top: 7px;
+    padding-top: 6px;
   }
 }
 
@@ -220,6 +220,14 @@
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+.tariff__enabled--yes {
+  fill: $yes;
+}
+
+.tariff__enabled--no {
+  fill: $no;
 }
 
 .tariff__toggles {
