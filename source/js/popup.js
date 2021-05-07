@@ -25,5 +25,3 @@ modalSubmitButton.addEventListener("click", function (evt) {
   modalSubmit.classList.add("modal--close");
   modalSubmit.classList.remove("modal--show");
 });
-
-
