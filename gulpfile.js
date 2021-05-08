@@ -170,10 +170,6 @@ const build = gulp.series(
     scripts,
     sprite,
     createWebp
-  ),
-  gulp.series(
-    server,
-    watcher
   )
 );
 
