@@ -66,13 +66,16 @@ const optimizeImages = () => {
       imagemin.optipng({ optimizationLevel: 3 }),
       imagemin.svgo()
     ]))
-    .pipe(gulp.dest("build/img"))
+    .pipe(gulp.dest("source/img"))
 }
 
 exports.optimizeImages = optimizeImages;
 
 const copyImages = () => {
-  return gulp.src("source/img/**/*.{png,jpg,svg}")
+  return gulp.src([
+    "source/img/**/*.{png,jpg,svg}",
+    "!source/img/icon/*.svg"
+  ])
     .pipe(gulp.dest("build/img"))
 }
 
@@ -164,6 +167,7 @@ const build = gulp.series(
   clean,
   copy,
   optimizeImages,
+  copyImages,
   gulp.parallel(
     styles,
     html,

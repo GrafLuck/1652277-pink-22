@@ -6,6 +6,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: auto 1fr 1fr;
+    grid-template-rows: min-content;
   }
 
   @media (min-width: $desktop-width) {

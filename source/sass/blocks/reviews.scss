@@ -45,6 +45,7 @@
 
 .reviews__quote {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column-reverse;
 
   @media (min-width: $tablet-width) {

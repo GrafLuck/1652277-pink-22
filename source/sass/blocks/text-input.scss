@@ -15,6 +15,7 @@
 .text-input--contact {
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column-reverse;
     justify-content: flex-start;
     align-items: flex-start;

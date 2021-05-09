@@ -47,3 +47,7 @@
     display: block;
   }
 }
+
+.checkbox__input:focus + .checkbox__label::before {
+  border-color: $dark-blue;
+}

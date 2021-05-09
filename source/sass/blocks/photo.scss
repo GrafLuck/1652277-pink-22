@@ -25,6 +25,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
     padding-left: 30px;
@@ -169,6 +170,7 @@
 
 .photo__wrapper-like {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
 

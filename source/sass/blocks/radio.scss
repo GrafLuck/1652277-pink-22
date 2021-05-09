@@ -42,6 +42,10 @@
   }
 }
 
+.radio__input:focus + .radio__label::before {
+  border-color: $dark-blue;
+}
+
 .radio__input {
   &:checked + .radio__label::after {
     display: block;

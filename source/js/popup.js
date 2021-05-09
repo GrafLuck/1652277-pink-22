@@ -1,9 +1,8 @@
 const form = document.querySelector(".form");
-const modalSubmit = document.querySelector(".modal__submit");
-const modalError = document.querySelector(".modal__error");
-const modalSubmitButton = document.querySelector(".modal__submit .button");
-const modalErrorButton = document.querySelector(".modal__error .button");
-console.log(modalErrorButton);
+const modalSubmit = document.querySelector(".modal--submit");
+const modalError = document.querySelector(".modal--error");
+const modalSubmitButton = document.querySelector(".modal--submit .button");
+const modalErrorButton = document.querySelector(".modal--error .button");
 const buttonForm = document.querySelector(".form__button");
 
 buttonForm.addEventListener("click", function (evt) {

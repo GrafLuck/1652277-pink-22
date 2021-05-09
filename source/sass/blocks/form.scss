@@ -146,6 +146,7 @@
   @media (min-width: $desktop-width) {
     height: 100%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
   }
@@ -185,9 +186,10 @@
     display: grid;
     grid-template-columns: max-content max-content max-content;
     grid-template-rows: auto auto;
+    grid-template-areas: "shark chuk tower"
+      "beach souvenir hotel";
     column-gap: 55px;
     row-gap: 49px;
-    grid-auto-flow: column;
     padding-bottom: 60px;
   }
 }
@@ -279,6 +281,30 @@
   }
 }
 
+.form__item--shark {
+  grid-area: shark;
+}
+
+.form__item--chuk {
+  grid-area: chuk;
+}
+
+.form__item--tower {
+  grid-area: tower;
+}
+
+.form__item--beach {
+  grid-area: beach;
+}
+
+.form__item--souvenir {
+  grid-area: souvenir;
+}
+
+.form__item--hotel {
+  grid-area: hotel;
+}
+
 .form__legend {
   position: absolute;
   top: 36px;
@@ -325,6 +351,7 @@
 
 .form__flex {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
 
