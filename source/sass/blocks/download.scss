@@ -2,43 +2,90 @@
   box-sizing: border-box;
   min-height: 733px;
   background-color: $blue;
-  background-image: url("../img/background-with-phone-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: center top;
-  background-size: auto 462px;
 
   @media (min-width: $tablet-width) {
     min-height: 729px;
-    background-image: url("../img/background-with-phone-tablet.jpg");
-    background-size: auto 729px;
-    background-position: center bottom;
+    background-image: url("../img/background/background-tablet.jpg");
+    background-position: center top;
     display: block;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/background-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 855px;
-    background-image: url("../img/background-with-phone-desktop.jpg");
-    background-size: auto 853px;
-    background-position: center bottom;
+    min-height: 853px;
+    background-image: url("../img/background/background-desktop.jpg");
+    background-size: cover;
+    background-position: center top;
     display: block;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/background-desktop@2x.jpg");
+    }
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    min-height: 462px;
+    background-image: url("../img/background/background-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/background-mobile@2x.jpg");
+    }
+
+    @media (min-width: $tablet-width) {
+      content: none;
+      background-image: none;
+    }
+  }
+}
+
+.download__image {
+  width: 320px;
+  height: 286px;
+  position: absolute;
+  top: 176px;
+  right: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 660px;
+    height: 545px;
+    top: auto;
+    bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+    height: 645px;
   }
 }
 
 .download__wrapper {
   box-sizing: border-box;
+  margin-top: -462px;
   padding-top: 65px;
   padding-bottom: 28px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    position: relative;
+    z-index: 4;
+    margin-top: 0;
     padding-top: 139px;
     padding-bottom: 113px;
     width: 300px;
   }
 
   @media (min-width: $desktop-width) {
-    // width: 940px; //
+    min-height: 853px;
     padding-top: 144px;
+    padding-bottom: 10px;
   }
 }
 
@@ -117,47 +164,5 @@
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 24px;
-  }
-}
-
-.download__image {
-  position: absolute;
-  margin: auto;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-}
-
-.download__image--mobile {
-  display: block;
-  width: auto;
-  height: 286px;
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
-.download__image--tablet {
-  width: auto;
-  height: 545px;
-
-  @media (max-width: $mobile-width-only) {
-    display: none;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
-}
-
-.download__image--desktop {
-  display: none;
-  width: auto;
-  height: 645px;
-
-  @media (min-width: $desktop-width) {
-    display: block;
   }
 }

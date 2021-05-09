@@ -6,7 +6,6 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: auto 1fr 1fr;
-    padding-top: 34px;
   }
 
   @media (min-width: $desktop-width) {
@@ -21,6 +20,7 @@
   margin-right: auto;
 
   @media (min-width: $tablet-width) {
+    padding-top: 4px;
     padding-right: 35px;
   }
 }

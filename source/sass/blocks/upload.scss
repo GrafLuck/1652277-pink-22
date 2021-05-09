@@ -1,5 +1,9 @@
 .upload {
   margin-bottom: -9px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 34px;
+  }
 }
 
 .upload__form {
@@ -11,7 +15,7 @@
   &::after {
     content: "";
     position: absolute;
-    bottom: 185px;
+    bottom: 201px;
     left: 0;
     height: 1px;
     width: 100%;
@@ -21,6 +25,11 @@
     @media (min-width: $tablet-width) {
       content: none;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 56px;
+    padding-bottom: 54px;
   }
 
   @media (min-width: $desktop-width) {
@@ -47,8 +56,16 @@
 
 .upload__text {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 0;
   margin-bottom: 42px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 71px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 67px;
+  }
 }
 
 .upload__label {
@@ -79,7 +96,7 @@
   padding: 0;
   margin-left: 20px;
   margin-right: 20px;
-  margin-bottom: 35px;
+  margin-bottom: 39px;
   padding-bottom: 75px;
   list-style: none;
   display: flex;
@@ -87,7 +104,7 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    display: flex;
+    display: block;
     flex-direction: column;
     justify-content: flex-start;
     padding-bottom: 0;
@@ -99,7 +116,7 @@
 
 .upload__item {
   @media (min-width: $tablet-width) {
-    margin-bottom: 17px;
+    margin-bottom: 16px;
     border-bottom: 1px solid rgba($dark-blue, 0.1);
   }
 
@@ -133,6 +150,10 @@
 
 .upload__submit {
   margin-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 23px;
+  }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;

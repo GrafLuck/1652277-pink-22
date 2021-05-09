@@ -82,6 +82,7 @@
     flex-basis: 100px;
     flex-grow: 2;
     margin-right: 44px;
+    font-size: 18px;
   }
 
   &:hover,
@@ -102,6 +103,7 @@
   @media (min-width: $desktop-width) {
     flex-basis: 100px;
     flex-grow: 2;
+    font-size: 18px;
   }
 
   &:hover,

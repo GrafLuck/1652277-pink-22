@@ -1,8 +1,10 @@
 .contacts {
   padding-top: 43px;
+  margin-bottom: -15px;
 
   @media (min-width: $desktop-width) {
     padding-top: 60px;
+    margin-bottom: 0;
   }
 }
 
@@ -40,34 +42,56 @@
   &::before {
     content: "";
     position: absolute;
-    height: 100%;
+    top: 0;
+    height: 33px;
     width: 100%;
-    background-image: url("../img/triangle-white.svg");
+    background-image: url("../img/triangle-contact-mobile-tablet.svg");
     background-repeat: no-repeat;
     background-position: top center;
-    background-size: 100% auto;
+    background-size: 100% 33px;
     z-index: 10;
 
     @media (min-width: $tablet-width) {
-      height: 100%;
+      height: 69px;
+      background-image: url("../img/triangle-contact-desktop.svg");
+      background-size: 100% 69px;
     }
 
     @media (min-width: $desktop-width) {
-      height: 123px;
+      height: 124px;
+      background-image: url("../img/triangle-contact-desktop.svg");
+      background-size: 100% 124px;
     }
+  }
+}
+
+.contacts__map--no-js {
+  background-image: url("../img/map.png");
+  background-position: center bottom 3px;
+  background-repeat: no-repeat;
+  width: 100%;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/map@2x.png");
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
   }
 }
 
 .contacts__iframe {
   border: none;
   width: 100%;
+  height: 200px;
 
   @media (min-width: $tablet-width) {
     height: 374px;
   }
 
   @media (min-width: $desktop-width) {
-    height: 502px;
-    padding-top: 18px;
+    height: 520px;
   }
 }

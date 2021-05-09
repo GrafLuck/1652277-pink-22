@@ -1,11 +1,13 @@
 .logo {
   display: block;
-  width: 145px;
-  height: 40px;
+  width: 74px;
+  height: 23px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: flex-end;
+    width: 145px;
+    height: 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -13,47 +15,211 @@
   }
 }
 
+.logo--footer {
+  width: 145px;
+  height: 40px;
+}
+
 .logo__image {
-  &:not(.logo__image--main-page):hover path,
-  &:not(.logo__image--main-page):focus path {
-    fill: $red;
+  width: 74px;
+  height: 23px;
+
+  @media (min-width: $tablet-width) {
+    width: 145px;
+    height: 40px;
   }
 
-  &:not(.logo__image--main-page):active path {
-    fill-opacity: 0.3;
+  @media (min-width: $desktop-width) {
+    width: 147px;
   }
 }
 
-.logo__image--header {
-  &:not(.logo__image--main-page):active path {
+.logo__image--footer {
+  width: 145px;
+  height: 40px;
+
+  @media (min-width: $desktop-width) {
+    width: 147px;
+  }
+}
+
+.logo__text-mobile {
+  fill: $white;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.logo__text-tablet {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    fill: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.logo__text-tablet--footer {
+  display: block;
+  fill: $dark-blue;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.logo__text-desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
     fill: $white;
   }
 }
 
-.logo__image--mobile {
+.logo__text-desktop--footer {
+  fill: $dark-blue;
+}
+
+.logo__star-text {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    fill: $red;
+  }
+}
+
+.logo__star-image {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    fill: $red;
+  }
+}
+
+.logo__star-image--footer {
+  @media (min-width: $desktop-width) {
+    fill: $dark-blue;
+  }
+}
+
+.logo__torn-glass {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    fill: $white;
+  }
+}
+
+.logo__torn-glass--footer {
+  @media (min-width: $desktop-width) {
+    fill: $red;
+  }
+}
+
+.logo__whole-glass {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    fill: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.logo__whole-glass--footer {
   display: block;
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
-.logo__image--tablet {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-  }
+  fill: $red;
 
   @media (min-width: $desktop-width) {
     display: none;
   }
 }
 
-.logo__image--desktop {
-  display: none;
+.logo__link {
+  &:not(.logo__link--main-page) {
+    &:hover,
+    &:focus {
+      .logo__text-mobile,
+      .logo__text-tablet,
+      .logo__text-desktop,
+      .logo__star-text,
+      .logo__star-image,
+      .logo__torn-glass,
+      .logo__whole-glass {
+        fill: $red;
+      }
+    }
 
-  @media (min-width: $desktop-width) {
-    display: block;
+    &:active {
+      opacity: 0.3;
+
+      &:not(.logo__link--footer) {
+        .logo__text-mobile {
+          fill: $white;
+        }
+
+        .logo__text-tablet {
+          fill: $white;
+        }
+
+        .logo__text-desktop {
+          fill: $white;
+        }
+
+        .logo__star-text {
+          fill: $red;
+        }
+
+        .logo__star-image {
+          fill: $red;
+        }
+
+        .logo__torn-glass {
+          fill: $white;
+        }
+
+        .logo__whole-glass {
+          fill: $white;
+        }
+      }
+
+      &.logo__link--footer {
+        .logo__text-tablet {
+          fill: $dark-blue;
+        }
+
+        .logo__text-desktop {
+          fill: $dark-blue;
+        }
+
+        .logo__star-text {
+          fill: $red;
+        }
+
+        .logo__star-image {
+          fill: $dark-blue;
+        }
+
+        .logo__torn-glass {
+          fill: $red;
+        }
+
+        .logo__whole-glass {
+          fill: $red;
+        }
+      }
+    }
   }
 }

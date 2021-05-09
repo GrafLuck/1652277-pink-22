@@ -11,9 +11,21 @@
   }
 }
 
+.page-main__upload {
+  margin-top: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 63px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 58px;
+  }
+}
+
 .page-main__text {
   text-align: center;
-  padding-top: 44px;
+  padding-top: 31px;
   padding-bottom: 0;
   width: 280px;
 
@@ -31,4 +43,36 @@
 .page-main__text--size {
   padding-bottom: 50px;
   margin-bottom: 0;
+}
+
+.page-main__over {
+  @media (min-width: $desktop-width) {
+    position: relative;
+    width: 100%;
+    z-index: 10;
+    margin-top: -458px;
+    background-color: $white;
+    padding-bottom: 40px;
+  }
+}
+
+.page-main__over--gallery {
+  @media (min-width: $tablet-width) {
+    margin-top: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    width: 100%;
+    z-index: 10;
+    margin-top: 0;
+    background-color: $white;
+    padding-bottom: 0;
+  }
+}
+
+.page-main__over--without-padding {
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+  }
 }

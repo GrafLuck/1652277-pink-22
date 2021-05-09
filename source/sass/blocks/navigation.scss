@@ -1,7 +1,7 @@
 .navigation {
   @media (min-width: $desktop-width) {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 37px;
+    padding-bottom: 43px;
   }
 }
 
@@ -12,6 +12,8 @@
 }
 
 .navigation--opened .navigation__toggle-wrapper {
+  box-sizing: border-box;
+  height: 70px;
   padding-top: 23px;
   padding-bottom: 23px;
   border-bottom: 1px solid $black;
@@ -75,6 +77,10 @@
   &:active::before,
   &:active::after {
     opacity: 0.3;
+  }
+
+  &.navigation__toggle--disabled {
+    display: none;
   }
 }
 
