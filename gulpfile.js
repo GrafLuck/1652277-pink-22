@@ -24,8 +24,8 @@ const styles = () => {
     .pipe(postcss([autoprefixer()]))
     .pipe(gulp.dest("build/css"))
     .pipe(postcss([csso()]))
-    .pipe(sourcemap.write("."))
     .pipe(rename("style.min.css"))
+    .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
 }
