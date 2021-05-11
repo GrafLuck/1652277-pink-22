@@ -12,6 +12,7 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/background/background-tablet@2x.jpg");
+      background-size: 1200px 729px;
     }
   }
 
@@ -24,6 +25,7 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/background/background-desktop@2x.jpg");
+      background-size: 2560px 853px;
     }
   }
 
@@ -37,6 +39,7 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/background/background-mobile@2x.jpg");
+      background-size: 822px 462px;
     }
 
     @media (min-width: $tablet-width) {
